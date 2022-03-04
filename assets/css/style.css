@@ -38,7 +38,7 @@ label {
     font-weight: 300;
 }
 
-button {
+button, .submit-user {
     color: #fff;
     background-color: #354933;
     padding: 10px 20px;

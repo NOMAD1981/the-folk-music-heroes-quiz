@@ -15,3 +15,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Get the user input element
+let user = document.getElementById('user');
+
+// Log user value to the console
+console.log('Username:', user.value);
+
+// Get the form and attach an event listener to it
+let form = document.getElementById('username-form');
+form.addEventListener('submit', function (event) {
+    // hide the form once submitted
+    this.style['display'] = 'none';
+    event.preventDefault();
+});
