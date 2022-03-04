@@ -23,3 +23,13 @@ h1 {
     color: #a88a6d;
     margin-top: -20px;
 }
+
+.responsive-img {
+    margin-top: 50px;
+}
+
+label {
+    color:#354933;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
