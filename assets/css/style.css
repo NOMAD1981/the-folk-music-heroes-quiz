@@ -24,6 +24,10 @@ h1 {
     margin-top: -20px;
 }
 
+p {
+    font-size: 2rem;
+}
+
 .responsive-img {
     margin-top: 50px;
 }
