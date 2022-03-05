@@ -48,3 +48,7 @@ button, .submit-user {
     text-transform: uppercase;
     border-radius: 12px;
 }
+
+.hide {
+    display: none;
+  }

@@ -22,25 +22,31 @@ let user = document.getElementById('user');
 // Log user value to the console
 console.log('Username:', user.value);
 
+// welcome section
+let nextSection = document.getElementById('next-section');
+let welcomeMessage = document.getElementById('welcome');
+
 // Get the form and attach an event listener to it
 let form = document.getElementById('username-form');
 form.addEventListener('submit', function (event) {
     // hide the form once submitted
     this.style['display'] = 'none';
+	welcomeMessage.classList.remove('hide');
     event.preventDefault();
 });
 
-function showWelcomeArea() {
-	let welcomeParagraph = document.createElement('p'); 
-		let textNode = document.createTextNode(`Welcome to The Folk Music 
-		Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge, and I can't promise 
-		it will be easy. Click start to get the ball rolling...`);
-		welcomeParagraph.appendChild(textNode);
-      	document.getElementById('welcome').appendChild(welcomeParagraph);
-	// let welcomeArea = document.getElementById('welcome').innerText = `Welcome to The Folk Music 
-	// Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge, and I can't promise 
-	// it will be easy. Click start to get the ball rolling...`;
-}
+
+// function showWelcomeArea() {
+// 	let welcomeParagraph = document.createElement('p'); 
+// 		let textNode = document.createTextNode(`Welcome to The Folk Music 
+// 		Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge, and I can't promise 
+// 		it will be easy. Click start to get the ball rolling...`);
+// 		welcomeParagraph.appendChild(textNode);
+//       	document.getElementById('welcome').appendChild(welcomeParagraph);
+// 	// let welcomeArea = document.getElementById('welcome').innerText = `Welcome to The Folk Music 
+// 	// Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge, and I can't promise 
+// 	// it will be easy. Click start to get the ball rolling...`;
+// }
 
 // quiz questions array
 let quizQuestions = [

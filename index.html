@@ -31,13 +31,13 @@
   </section>
   
   <!-- username entry form -->
-  <section id="user">
+  <section id="user-input">
     <div class="user-area row">
       <div class="col s4 offset-s4">
         <form id="username-form" method="GET">
           <label for="username">Enter Username: </label>
           <input type="text" id="user" name="username" required>
-          <input type="submit" class="submit-user" value="Submit" />
+          <input type="submit" class="submit-user" id="next-section" value="Submit & Start" />
         </form>
       </div>
     </div>
@@ -47,7 +47,9 @@
   <section id="welcome" class="hide">
     <div class="welcome-area container">
       <div class="row col s6">
-        <p id="welcome"></p>
+        <p id="welcomep">Welcome to The Folk Music 
+            Heroes Quiz [${user.value}!] Here you will get to test your folk music knowledge, and I can't promise 
+            it will be easy. Click start to get the ball rolling...</p>
       </div>
     </div>
   </section>
