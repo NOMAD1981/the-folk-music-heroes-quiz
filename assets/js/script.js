@@ -31,9 +31,15 @@ form.addEventListener('submit', function (event) {
 });
 
 function showWelcomeArea() {
-	let welcomeArea = document.getElementById('welcome').innerText = `Welcome to The Folk Music 
-	Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge, and I can't promise 
-	it will be easy. Click start to get the ball rolling...`;
+	let welcomeParagraph = document.createElement('p'); 
+		let textNode = document.createTextNode(`Welcome to The Folk Music 
+		Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge, and I can't promise 
+		it will be easy. Click start to get the ball rolling...`);
+		welcomeParagraph.appendChild(textNode);
+      	document.getElementById('welcome').appendChild(welcomeParagraph);
+	// let welcomeArea = document.getElementById('welcome').innerText = `Welcome to The Folk Music 
+	// Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge, and I can't promise 
+	// it will be easy. Click start to get the ball rolling...`;
 }
 
 // quiz questions array
