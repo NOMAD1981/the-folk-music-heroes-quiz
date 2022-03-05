@@ -37,7 +37,7 @@
         <form id="username-form" method="GET">
           <label for="username">Enter Username: </label>
           <input type="text" id="user" name="username" required>
-          <input type="submit" class="submit-user" id="next-section" value="Submit & Start" />
+          <input type="submit" class="submit-user" id="next-section" value="Submit" />
         </form>
       </div>
     </div>
@@ -50,6 +50,9 @@
         <p id="welcomep">Welcome to The Folk Music 
             Heroes Quiz [${user.value}!] Here you will get to test your folk music knowledge, and I can't promise 
             it will be easy. Click start to get the ball rolling...</p>
+      </div>
+      <div class="row col s12">
+        <button data-type="start" id="start">Start</button>
       </div>
     </div>
   </section>
@@ -66,9 +69,6 @@
   <!-- buttons -->
   <section id="buttons" class="hide">
     <div class="buttons-area">
-      <div class="btn1 row col s12">
-        <button data-type="start" id="start">Start</button>
-      </div>
       <div class="btns1 row col s12">
         <button data-type="submit" id="submitBtn">Submit</button>
         <button data-type="next" id="nextQuestion">Next Question</button>

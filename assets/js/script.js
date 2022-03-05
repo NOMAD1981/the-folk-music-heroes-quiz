@@ -2,18 +2,18 @@
 
 // wait for the DOM to finish loading before running the quiz
 document.addEventListener('DOMContentLoaded', function() {
-    let buttons = document.getElementsByTagName('button');
+    // let buttons = document.getElementsByTagName('button');
 
-    for (let button of buttons) {
-        button.addEventListener('click', function() {
-            if (this.getAttribute('data-type') === 'start') {
-                alert('You clicked Start!');
-            } else {
-                let buttonType = this.getAttribute('data-type');
-                alert(`You clicked ${buttonType}`);
-            }
-        });
-    }
+    // for (let button of buttons) {
+    //     button.addEventListener('click', function() {
+    //         if (this.getAttribute('data-type') === 'start') {
+    //             alert('You clicked Start!');
+    //         } else {
+    //             let buttonType = this.getAttribute('data-type');
+    //             alert(`You clicked ${buttonType}`);
+    //         }
+    //     });
+    // }
 });
 
 // Get the user input element
@@ -26,27 +26,30 @@ console.log('Username:', user.value);
 let nextSection = document.getElementById('next-section');
 let welcomeMessage = document.getElementById('welcome');
 
+// quiz section
+let startButtonClick = document.getElementById('start');
+let quizSection = document.getElementById('quiz');
+
+// score tally section
+let scoreArea = document.getElementById('tally');
+
 // Get the form and attach an event listener to it
 let form = document.getElementById('username-form');
 form.addEventListener('submit', function (event) {
     // hide the form once submitted
     this.style['display'] = 'none';
+	// show welcome and score tally sections
 	welcomeMessage.classList.remove('hide');
     event.preventDefault();
 });
 
+// event listener for start button
+startButtonClick.addEventListener('click', function () {
+    quizSection.classList.remove('hide');
+	scoreArea.classList.remove('hide');
+    welcomeMessage.classList.add('hide');
 
-// function showWelcomeArea() {
-// 	let welcomeParagraph = document.createElement('p'); 
-// 		let textNode = document.createTextNode(`Welcome to The Folk Music 
-// 		Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge, and I can't promise 
-// 		it will be easy. Click start to get the ball rolling...`);
-// 		welcomeParagraph.appendChild(textNode);
-//       	document.getElementById('welcome').appendChild(welcomeParagraph);
-// 	// let welcomeArea = document.getElementById('welcome').innerText = `Welcome to The Folk Music 
-// 	// Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge, and I can't promise 
-// 	// it will be easy. Click start to get the ball rolling...`;
-// }
+});
 
 // quiz questions array
 let quizQuestions = [
