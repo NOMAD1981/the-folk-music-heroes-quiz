@@ -52,3 +52,8 @@ button, .submit-user {
 .hide {
     display: none;
   }
+
+#question,
+#answer-container {
+    text-align: left;
+}

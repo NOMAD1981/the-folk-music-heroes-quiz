@@ -87,7 +87,7 @@ function getQuizQuestions() {
 	// define i and populate
 	let i= 0;
 	currentQuestion.answers.forEach(function (answer) {
-		// generate answer abc radio buttons
+		// generate answer abc radio button choices
 		// Credit: referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
 		// Credit: referenced https://www.techiedelight.com/create-radio-button-dynamically-javascript/
 		answerHTML = answerHTML + '<label>' + String.fromCharCode(65+i) + '<label>:'
