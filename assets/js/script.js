@@ -80,8 +80,27 @@ function getQuizQuestions() {
 
     // displays the question to the html
     document.getElementById('question').innerText = currentQuestion.question;
-}
 
+	// define answer html
+	let answerHTML = '';
+
+	// define i and populate
+	let i= 0;
+	currentQuestion.answers.forEach(function (answer) {
+		// generate answer abc radio buttons
+		// Credit: referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
+		// Credit: referenced https://www.techiedelight.com/create-radio-button-dynamically-javascript/
+		answerHTML = answerHTML + '<label>' + String.fromCharCode(65+i) + '<label>:'
+				+'<input type="radio" name="choice" value="' + String.fromCharCode(97+i) + '">'
+			+ answer + '<br>';
+		i++;
+	});
+
+document.getElementById('answer-container').innerHTML = '<div class="answer-div">' + answerHTML + '</div>';
+
+// remove question so it won't be asked again
+quizQuestions.splice(randomQuestion, 1);
+}
 
 // quiz questions array
 let questionsAndAnswers = [
