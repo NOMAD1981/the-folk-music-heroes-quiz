@@ -72,28 +72,14 @@ function startQuiz() {
 }
 
 function getQuizQuestions() {
-	// declare quiz questions array
-    let quizQuestions = [questionsAndAnswers];
-
 	// call a random question from quizQuestions array
-	let randomQuestion = Math.floor(Math.random() * quizQuestions.length);
+    let randomQuestion = Math.floor(Math.random() * quizQuestions.length);
 
     // display as current question
     currentQuestion = quizQuestions[randomQuestion];
 
     // displays the question to the html
-    questionItem.innerText = currentQuestion.question;
-
-    // displays question choices to the html
-    options.forEach(function (selection) {
-        let selected = selection.dataset.option;
-        selection.innerText = currentQuestion[selected];
-
-    });
-
-    // Accept answer
-    quizQuestions.splice(randomQuestion, 1);
-    acceptAnswer = true;
+    document.getElementById('question').innerText = currentQuestion.question;
 }
 
 
