@@ -96,6 +96,7 @@ function getQuizQuestions() {
 		i++;
 	});
 
+// get answers and place in html
 document.getElementById('answer-container').innerHTML = '<div class="answer-div">' + answerHTML + '</div>';
 
 // remove question so it won't be asked again

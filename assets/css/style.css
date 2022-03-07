@@ -30,12 +30,32 @@ p {
 
 .responsive-img {
     margin-top: 50px;
+    max-width: 100%;
+    height: auto;
 }
+
+.welcome-area,
+.questions-area,
+.score-area {
+    padding: 50px 50px;
+    width: 60%;
+    margin: auto;
+}
+
+button  {
+    padding-top: 50px;
+}
+
 
 label {
     color:#354933;
     font-size: 2.5rem;
     font-weight: 300;
+}
+
+.answer-div label {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 button, .submit-user {
@@ -57,3 +77,4 @@ button, .submit-user {
 #answer-container {
     text-align: left;
 }
+
