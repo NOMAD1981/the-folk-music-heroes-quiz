@@ -7,9 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // Get the user input element
 let user = document.getElementById('user');
 
-// Log user value to the console
-console.log('Username:', user.value);
-
 // Get the form and attach an event listener to it
 let form = document.getElementById('username-form');
 form.addEventListener('submit', function (event) {
@@ -17,19 +14,29 @@ form.addEventListener('submit', function (event) {
     this.style['display'] = 'none';
 	// show welcome and score tally sections
 	welcomeMessage.classList.remove('hide');
+	//console log username to test
+    console.debug('Username:', user.value);
     event.preventDefault();
+
+	// call the welcome paragraph and add text via javascript
+	// Credit: referenced article https://www.codegrepper.com/code-examples/javascript/how+to+add+a+paragraph+in+html+using+javascript
+	let p = document.createElement('p');
+    p.innerHTML = "Welcome to The Folk Music Heroes Quiz " + user.value + "! Here you will get to test your folk music knowledge and I can't promise it will be easy. Click start to get the ball rolling..";
+
+    document.getElementById('welcome-paragraph').appendChild(p);
+    console.debug('submit username-form');
 });
 
 // welcome section
 let nextSection = document.getElementById('next-section');
 let welcomeMessage = document.getElementById('welcome');
 
-// call the welcome paragraph and add text via javascript
-// Credit: referenced article https://www.codegrepper.com/code-examples/javascript/how+to+add+a+paragraph+in+html+using+javascript
-let p = document.createElement('p');
-p.innerHTML = `Welcome to The Folk Music Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge and I can't promise it will be easy. Click start to get the ball rolling..`;
+// // call the welcome paragraph and add text via javascript
+// // Credit: referenced article https://www.codegrepper.com/code-examples/javascript/how+to+add+a+paragraph+in+html+using+javascript
+// let p = document.createElement('p');
+// p.innerHTML = `Welcome to The Folk Music Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge and I can't promise it will be easy. Click start to get the ball rolling..`;
 
-document.getElementById('welcome-paragraph').appendChild(p);
+// document.getElementById('welcome-paragraph').appendChild(p);
 
 // quiz section
 let startButtonClick = document.getElementById('start');
@@ -61,19 +68,22 @@ let currentQuestion = {};
 const totalQuestions = 10;
 
 /**
- * Function to call the quiz variables and call questions from the getQuestions function
+ * Function to call the quiz variables and call questions from the getQuizQuestions function
  */
 function startQuiz() {
     questionCount = 0;
     correctAnswers = 0;
 	incorrectAnswers = 0;
-    quizQuestions = [questionsAndAnswers];
-    getQuestions();
+    // quizQuestions = [questionsAndAnswers];
+    getQuizQuestions();
 }
 
-function getQuestions() {
+function getQuizQuestions() {
+	// declare quiz questions array
+    let quizQuestions = [questionsAndAnswers];
+
 	// call a random question from quizQuestions array
-    let randomQuestion = Math.floor(Math.random() * quizQuestions.length);
+	let randomQuestion = Math.floor(Math.random() * quizQuestions.length);
 
     // display as current question
     currentQuestion = quizQuestions[randomQuestion];
