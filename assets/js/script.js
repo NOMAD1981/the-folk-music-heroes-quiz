@@ -51,6 +51,18 @@ startButtonClick.addEventListener('click', function () {
 	startQuiz();
 });
 
+/**
+ * // add event listener to submit button that checks the answer, 
+ * updates the quiz statistics, 
+ * gets the quiz questions while preventing the default behaviour
+ */
+document.getElementById('submitBtn').addEventListener('click',function(event){
+	checkAnswer();
+	updateStatistics();
+	getQuizQuestions();
+	event.preventDefault();
+  })
+
 // define quiz variables
 let correctAnswers = 0;
 let incorrectAnswers = 0;
@@ -102,6 +114,21 @@ document.getElementById('answer-container').innerHTML = '<div class="answer-div"
 // remove question so it won't be asked again
 quizQuestions.splice(randomQuestion, 1);
 }
+
+/**
+ * Use form element to to check for correct answers,
+ * incorrect answers and to log the question count
+ */
+function checkAnswer(){
+	let form = document.getElementById('quiz-form');
+	console.debug(form);
+	if (form.elements['choice'].value == currentQuestion.correctAnswer){
+	  correctAnswers++;
+	} else{
+	  incorrectAnswers++;
+	}
+	questionCount++;
+  }
 
 // quiz questions array
 let questionsAndAnswers = [
