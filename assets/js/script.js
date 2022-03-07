@@ -10,6 +10,16 @@ let user = document.getElementById('user');
 // Log user value to the console
 console.log('Username:', user.value);
 
+// Get the form and attach an event listener to it
+let form = document.getElementById('username-form');
+form.addEventListener('submit', function (event) {
+    // hide the form once submitted
+    this.style['display'] = 'none';
+	// show welcome and score tally sections
+	welcomeMessage.classList.remove('hide');
+    event.preventDefault();
+});
+
 // welcome section
 let nextSection = document.getElementById('next-section');
 let welcomeMessage = document.getElementById('welcome');
@@ -28,17 +38,11 @@ let quizSection = document.getElementById('quiz');
 // score tally section
 let scoreArea = document.getElementById('tally');
 
-// Get the form and attach an event listener to it
-let form = document.getElementById('username-form');
-form.addEventListener('submit', function (event) {
-    // hide the form once submitted
-    this.style['display'] = 'none';
-	// show welcome and score tally sections
-	welcomeMessage.classList.remove('hide');
-    event.preventDefault();
-});
-
-// event listener for start button
+/**
+ * Event listener for start button click, 
+ * then hide the welcome message,
+ * and show the quiz section and score area
+ */
 startButtonClick.addEventListener('click', function () {
     quizSection.classList.remove('hide');
 	scoreArea.classList.remove('hide');
@@ -49,14 +53,24 @@ startButtonClick.addEventListener('click', function () {
 
 // define quiz variables
 let score = 0;
-let acceptUserAnswer = false;
-let questionsArray = [];
+let acceptAnswer = false;
+let quizQuestions = [];
 let questionCount = 0;
 let currentQuestion = {};
 const totalQuestions = 10;
 
+/**
+ * Function to call the quiz variables and call questions from the getQuestions function
+ */
+function startQuiz() {
+    questionCount = 0;
+    score = 0;
+    quizQuestions = [questionsAndAnswers];
+    getQuestions();
+}
+
 // quiz questions array
-let quizQuestions = [
+let questionsAndAnswers = [
 	{
 		question: "Who is the only person to have performed a duet with Robert Plant of Led Zepplin?",
 		answers: {
