@@ -26,6 +26,13 @@ console.log('Username:', user.value);
 let nextSection = document.getElementById('next-section');
 let welcomeMessage = document.getElementById('welcome');
 
+// call the welcome paragraph and add text via javascript
+// Credit: referenced article https://www.codegrepper.com/code-examples/javascript/how+to+add+a+paragraph+in+html+using+javascript
+let p = document.createElement('p');
+p.innerHTML = `Welcome to The Folk Music Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge and I can't promise it will be easy. Click start to get the ball rolling..`;
+
+document.getElementById('welcome-paragraph').appendChild(p);
+
 // quiz section
 let startButtonClick = document.getElementById('start');
 let quizSection = document.getElementById('quiz');
