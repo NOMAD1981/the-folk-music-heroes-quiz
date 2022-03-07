@@ -52,7 +52,8 @@ startButtonClick.addEventListener('click', function () {
 });
 
 // define quiz variables
-let score = 0;
+let correctAnswers = 0;
+let incorrectAnswers = 0;
 let acceptAnswer = false;
 let quizQuestions = [];
 let questionCount = 0;
@@ -64,10 +65,12 @@ const totalQuestions = 10;
  */
 function startQuiz() {
     questionCount = 0;
-    score = 0;
+    correctAnswers = 0;
+	incorrectAnswers = 0;
     quizQuestions = [questionsAndAnswers];
     getQuestions();
 }
+
 
 // quiz questions array
 let questionsAndAnswers = [
