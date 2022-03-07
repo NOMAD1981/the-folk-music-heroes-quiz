@@ -71,6 +71,10 @@ function startQuiz() {
     getQuestions();
 }
 
+function getQuestions() {
+    
+}
+
 
 // quiz questions array
 let questionsAndAnswers = [
