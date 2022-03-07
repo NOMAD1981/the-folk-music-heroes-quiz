@@ -27,22 +27,15 @@ form.addEventListener('submit', function (event) {
     console.debug('submit username-form');
 });
 
-// welcome section
+// define welcome section
 let nextSection = document.getElementById('next-section');
 let welcomeMessage = document.getElementById('welcome');
 
-// // call the welcome paragraph and add text via javascript
-// // Credit: referenced article https://www.codegrepper.com/code-examples/javascript/how+to+add+a+paragraph+in+html+using+javascript
-// let p = document.createElement('p');
-// p.innerHTML = `Welcome to The Folk Music Heroes Quiz ${user.value}! Here you will get to test your folk music knowledge and I can't promise it will be easy. Click start to get the ball rolling..`;
-
-// document.getElementById('welcome-paragraph').appendChild(p);
-
-// quiz section
+// define quiz section
 let startButtonClick = document.getElementById('start');
 let quizSection = document.getElementById('quiz');
 
-// score tally section
+// define score tally section
 let scoreArea = document.getElementById('tally');
 
 /**
@@ -74,7 +67,7 @@ function startQuiz() {
     questionCount = 0;
     correctAnswers = 0;
 	incorrectAnswers = 0;
-    // quizQuestions = [questionsAndAnswers];
+    quizQuestions = questionsAndAnswers;
     getQuizQuestions();
 }
 
@@ -108,272 +101,272 @@ function getQuizQuestions() {
 let questionsAndAnswers = [
 	{
 		question: "Who is the only person to have performed a duet with Robert Plant of Led Zepplin?",
-		answers: {
-			a: 'Kate Bush',
-			b: 'Sandy Denny',
-			c: 'Eric Clapton'
-		},
+		answers: [
+			'Kate Bush',
+			'Sandy Denny',
+			'Eric Clapton'
+		],
 		correctAnswer: 'b'
 	},
     {
 		question: "Which well known female folk singer led the crowd at Rev. Dr. Martin Luther King’s March on Washington in 1963?",
-		answers: {
-			a: 'Joan Baez',
-			b: 'Odetta',
-			c: 'Joni Mitchell'
-		},
+		answers: [
+			'Joan Baez',
+			'Odetta',
+			'Joni Mitchell'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Which well-known male singer songwriter was an ordained minister?",
-		answers: {
-			a: 'Kris Kristofferson',
-			b: 'Bob Dylan',
-			c: 'Johnny Cash'
-		},
+		answers: [
+			'Kris Kristofferson',
+			'Bob Dylan',
+			'Johnny Cash'
+		],
 		correctAnswer: 'c'
 	},
     {
 		question: "This folk artist's autobiography was entitled 'Bound for Glory.'",
-		answers: {
-			a: 'Woody Guthrie',
-			b: 'Bob Dylan',
-			c: 'Pete Seeger'
-		},
+		answers: [
+			'Woody Guthrie',
+			'Bob Dylan',
+			'Pete Seeger'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Which popular folk music ensemble comprised of Pete Seeger, Lee Hays, Ronnie Gilbert and Fred Hellerman?",
-		answers: {
-			a: 'The Limelighters',
-			b: 'The New Lost City Ramblers',
-			c: 'The Weavers'
-		},
+		answers: [
+			'The Limelighters',
+			'The New Lost City Ramblers',
+			'The Weavers'
+		],
 		correctAnswer: 'c'
 	},
     {
 		question: "Which Kingston Trio hit was originally a political campaign song?",
-		answers: {
-			a: 'M.T.A.',
-			b: 'Scotch and Soda',
-			c: 'Where Have All the Flowers Gone'
-		},
+		answers: [
+			'M.T.A.',
+			'Scotch and Soda',
+			'Where Have All the Flowers Gone'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Which of these folk singers is believed to have caused the famous riot in Peekskill, New York.",
-		answers: {
-			a: 'Paul Robeson',
-			b: 'Marian Anderson',
-			c: 'Woody Guthrie'
-		},
+		answers: [
+			'Paul Robeson',
+			'Marian Anderson',
+			'Woody Guthrie'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Which of the following songs was not written by Bob Dylan?",
-		answers: {
-			a: "Blowin' in the Wind",
-			b: 'Mr. Tamborine Man',
-			c: 'Caribbean Wind'
-		},
+		answers: [
+			"Blowin' in the Wind",
+			'Mr. Tamborine Man',
+			'Caribbean Wind'
+		],
 		correctAnswer: 'b'
 	},
     {
 		question: "Which Irish musician now has a statue to him on Harry Street off Grafton Street in Dublin?",
-		answers: {
-			a: 'Christie Hennessy',
-			b: 'Luke Kelly',
-			c: 'Phil Lynott'
-		},
+		answers: [
+			'Christie Hennessy',
+			'Luke Kelly',
+			'Phil Lynott'
+		],
 		correctAnswer: 'c'
 	},
     {
 		question: "Whose first album was 'Paddy On The Road?'",
-		answers: {
-			a: 'Declan Sinnott',
-			b: 'Christy Moore',
-			c: 'Paul Brady'
-		},
+		answers: [
+			'Declan Sinnott',
+			'Christy Moore',
+			'Paul Brady'
+		],
 		correctAnswer: 'b'
 	},
     {
 		question: "Paddy Moloney founded which legendary band?",
-		answers: {
-			a: 'The Chieftains',
-			b: 'The Dubliners',
-			c: 'Planxty'
-		},
+		answers: [
+			'The Chieftains',
+			'The Dubliners',
+			'Planxty'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Which well known musician is widely regarded as the first significant contributor to the genre.",
-		answers: {
-			a: 'Pete Seeger',
-			b: 'Woody Guthrie',
-			c: 'Burl Ives'
-		},
+		answers: [
+			'Pete Seeger',
+			'Woody Guthrie',
+			'Burl Ives'
+		],
 		correctAnswer: 'b'
 	},
     {
 		question: "Which folk singer was called 'Judas' for going electric?",
-		answers: {
-			a: 'Johnny Cash',
-			b: 'Neil Young',
-			c: 'Bob Dylan'
-		},
+		answers: [
+			'Johnny Cash',
+			'Neil Young',
+			'Bob Dylan'
+		],
 		correctAnswer: 'c'
 	},
     {
 		question: "In 1955 Bantu Choral Folk Songs was the first recording of black folk by a white artist. Who was that artist?",
-		answers: {
-			a: 'Pete Seeger',
-			b: 'John Lomax',
-			c: 'Donovan'
-		},
+		answers: [
+			'Pete Seeger',
+			'John Lomax',
+			'Donovan'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Which Irish folk performer was regarded by Bob Dylan as the greatest ballad singer ever of all time?",
-		answers: {
-			a: 'Tommy Makem',
-			b: 'Liam Clancy',
-			c: 'Luke Kelly'
-		},
+		answers: [
+			'Tommy Makem',
+			'Liam Clancy',
+			'Luke Kelly'
+		],
 		correctAnswer: 'b'
 	},
     {
 		question: "Which of these artists is bilingual and even produced an album in Spanish.",
-		answers: {
-			a: 'Arlo Guthrie',
-			b: 'John Denver',
-			c: 'Joan Baez'
-		},
+		answers: [
+			'Arlo Guthrie',
+			'John Denver',
+			'Joan Baez'
+		],
 		correctAnswer: 'c'
 	},
     {
 		question: "Which much loved American folk performer owned a home, and spent much time, in Kinvara, Co. Galway, Ireland?",
-		answers: {
-			a: 'Steve Goodman',
-			b: 'John Prine',
-			c: 'Tom Paxton'
-		},
+		answers: [
+			'Steve Goodman',
+			'John Prine',
+			'Tom Paxton'
+		],
 		correctAnswer: 'b'
 	},
     {
 		question: "Who wrote and performed the song 'Pancho and Lefty'?",
-		answers: {
-			a: 'Townes_Van_Zandt',
-			b: 'Emmylou Harris',
-			c: 'Don Williams'
-		},
+		answers: [
+			'Townes_Van_Zandt',
+			'Emmylou Harris',
+			'Don Williams'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Much of England’s traditional folk music owes its existence to this man's great mission of recording and preservation. Who is it?",
-		answers: {
-			a: 'Ralph Vaughan Williams',
-			b: 'Ralph McTell',
-			c: 'Cecil Sharp'
-		},
+		answers: [
+			'Ralph Vaughan Williams',
+			'Ralph McTell',
+			'Cecil Sharp'
+		],
 		correctAnswer: 'c'
 	},
     {
 		question: "Which band was led by Country Joe McDonald at the first Woodstock Festival in August 1969?",
-		answers: {
-			a: 'The Ranchers',
-			b: 'The Bulls',
-			c: 'The Fish'
-		},
+		answers: [
+			'The Ranchers',
+			'The Bulls',
+			'The Fish'
+		],
 		correctAnswer: 'c'
 	},
     {
 		question: "Which band, fond of singing about 'Baba O'Riley', played a 25-song set at the first Woodstock Festival in August 1969?",
-		answers: {
-			a: 'Crosby Stills Nash & Young',
-			b: 'The Who',
-			c: 'Sly & the Family Stone'
-		},
+		answers: [
+			'Crosby Stills Nash & Young',
+			'The Who',
+			'Sly & the Family Stone'
+		],
 		correctAnswer: 'b'
 	},
     {
 		question: "How many acts performed at Woodstock in 1969?",
-		answers: {
-			a: '32',
-			b: '64',
-			c: '12'
-		},
+		answers: [
+			'32',
+			'64',
+			'12'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Who was the first artist to play at Woodstock in 1969?",
-		answers: {
-			a: 'Bob Dylan',
-			b: 'Jimi Hendrix',
-			c: 'Richie Havens'
-		},
+		answers: [
+			'Bob Dylan',
+			'Jimi Hendrix',
+			'Richie Havens'
+		],
 		correctAnswer: 'c'
 	},
     {
 		question: "David Crosby was originally a member of what band before Crosby, Stills, and Nash?",
-		answers: {
-			a: 'Buffalo Springfield',
-			b: 'The Byrds',
-			c: 'Jefferson Airplane'
-		},
+		answers: [
+			'Buffalo Springfield',
+			'The Byrds',
+			'Jefferson Airplane'
+		],
 		correctAnswer: 'b'
 	},
     {
 		question: "According to the lyrics of 'White Rabbit' by Jefferson Airplane, what does the pill that mother gives you do?",
-		answers: {
-			a: "Doesn't do anything at all",
-			b: 'Makes you tall',
-			c: 'Makes you small'
-		},
+		answers: [
+			"Doesn't do anything at all",
+			'Makes you tall',
+			'Makes you small'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Which of the following musicians was not a member of Fairport Convention?",
-		answers: {
-			a: 'Richard Thompson',
-			b: 'Simon Nicol',
-			c: 'Tom Rush'
-		},
+		answers: [
+			'Richard Thompson',
+			'Simon Nicol',
+			'Tom Rush'
+		],
 		correctAnswer: 'c'
 	},
     {
 		question: "Who wrote the song 'The Town That I Loved So Well', about their home town?",
-		answers: {
-			a: 'Luke Kelly',
-			b: 'Phil Coulter',
-			c: 'Paul Brady'
-		},
+		answers: [
+			'Luke Kelly',
+			'Phil Coulter',
+			'Paul Brady'
+		],
 		correctAnswer: 'b'
 	},
     {
 		question: "Which folk artist was inducted into the Rock and Roll Hall of Fame in 1997.",
-		answers: {
-			a: 'Joni Mitchell',
-			b: 'Rory McEwen',
-			c: 'Jesse Fuller'
-		},
+		answers: [
+			'Joni Mitchell',
+			'Rory McEwen',
+			'Jesse Fuller'
+		],
 		correctAnswer: 'a'
 	},
     {
 		question: "Which Irish performers brought Irish folk music to an International stage, in the 1960s, paving the way for other great Irish bands that followed?",
-		answers: {
-			a: 'The Chieftains',
-			b: 'The Clancy Brothers',
-			c: 'The Pogues'
-		},
+		answers: [
+			'The Chieftains',
+			'The Clancy Brothers',
+			'The Pogues'
+		],
 		correctAnswer: 'b'
 	},
 	{
 		question: "Which of these folk artists was a classically trained singer who began her voice training at age thirteen.",
-		answers: {
-			a: 'Odetta',
-			b: 'Moya Brennan',
-			c: 'Sandy Denny'
-		},
+		answers: [
+			'Odetta',
+			'Moya Brennan',
+			'Sandy Denny'
+		],
 		correctAnswer: 'a'
 	}
 ];
