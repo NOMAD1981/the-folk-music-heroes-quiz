@@ -66,7 +66,6 @@ document.getElementById('submitBtn').addEventListener('click',function(event){
 // define quiz variables
 let correctAnswers = 0;
 let incorrectAnswers = 0;
-let acceptAnswer = false;
 let quizQuestions = [];
 let questionCount = 0;
 let currentQuestion = {};
