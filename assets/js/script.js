@@ -83,6 +83,12 @@ function startQuiz() {
     getQuizQuestions();
 }
 
+/**
+ * Function to get the quiz questions randomly,
+ * assign a random question to the current question and send it to the html,
+ * define the answers and populate with radio buttons,
+ * then remove the current question so it won't be asked again
+ */
 function getQuizQuestions() {
 	// call a random question from quizQuestions array
     let randomQuestion = Math.floor(Math.random() * quizQuestions.length);
@@ -108,7 +114,7 @@ function getQuizQuestions() {
 		i++;
 	});
 
-// get answers and place in html
+// place answers in the html
 document.getElementById('answer-container').innerHTML = '<div class="answer-div">' + answerHTML + '</div>';
 
 // remove question so it won't be asked again
@@ -119,18 +125,18 @@ quizQuestions.splice(randomQuestion, 1);
  * Use form element to to check for correct answers,
  * incorrect answers and to log the question count
  */
-function checkAnswer(){
+function checkAnswer() {
 	let form = document.getElementById('quiz-form');
 	console.debug(form);
 	if (form.elements['choice'].value == currentQuestion.correctAnswer){
 	  correctAnswers++;
-	} else{
+	} else {
 	  incorrectAnswers++;
 	}
 	questionCount++;
   }
 
-  // update quiz stats
+// update quiz stats
 function updateStatistics(){
 	document.getElementById('score').innerHTML = correctAnswers;
 	document.getElementById('incorrect').innerHTML = incorrectAnswers;
