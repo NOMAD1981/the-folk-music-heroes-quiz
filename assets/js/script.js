@@ -123,6 +123,9 @@ document.getElementById('answer-container').innerHTML = '<div class="answer-div"
 quizQuestions.splice(randomQuestion, 1);
 }
 
+// define finish section
+let quizFinish = document.getElementById('finish');
+
 /**
  * Use form element to to check for correct answers,
  * incorrect answers and to log the question count
@@ -139,8 +142,8 @@ function checkAnswer() {
 	}
 	questionCount++;
 	if (quizQuestions.length === 0 || questionCount > totalQuestions) {
-        displayResults();
-    }
+		displayResult();
+	}
   }
 
 // update quiz stats
@@ -148,6 +151,11 @@ function updateStatistics(){
 	document.getElementById('score').innerHTML = correctAnswers;
 	document.getElementById('incorrect').innerHTML = incorrectAnswers;
 	document.getElementById('question-counter').innerHTML = questionCount;
+}
+
+// display overall result, along with retry and play music buttons
+function displayResult() {
+	
 }
 
 // quiz questions array
