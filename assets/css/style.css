@@ -112,10 +112,19 @@ button, .submit-user {
     text-align: left;
 }
 
+.scores {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
 @media screen and (max-width: 540px) {
     h1 {
         padding-top: 5px;
         font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.7rem;
     }
     
     #main-container {
@@ -140,11 +149,15 @@ button, .submit-user {
     }
 
     label {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     
     input#username {
         font-size: 1rem;
+    }
+
+    .scores {
+        font-size: 1.7rem;
     }
 
     @media screen and (max-width: 380px) {
@@ -153,7 +166,7 @@ button, .submit-user {
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     
     #main-container {
@@ -185,4 +198,8 @@ button, .submit-user {
         margin-top: 20px;
         padding: 5px 10px;
         font-size: 1.3rem;
+    }
+
+    .scores {
+        font-size: 1.5rem;
     }
