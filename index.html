@@ -5,11 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!--Import materialize.css-->
-<!-- <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/> -->
-<!--Import materialize.min.css-->
-<!-- <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/> -->
-<!-- Import style.css -->
 <link rel="stylesheet" href="assets/css/style.css">
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -18,61 +13,57 @@
 <body>
 
 <!-- main container with quiz content sections -->
-<div class="container valign-center"> 
+<div class="main container"> 
   
   <!-- header with logo and heading -->
   <section id="header">
-    <div class="row">
-      <div class="col s12"> <img class="responsive-img" src="assets/images/celtic_border_swans.png" alt="Celtic Swans Border Logo"> </div>
-      <div class="col s12">
+      <div>
+        <img class="responsive-img" src="assets/images/celtic_border_swans.png" alt="Celtic Swans Border Logo">
+      </div>
+      <div>
         <h1>The Folk Music Heroes Quiz</h1>
       </div>
-    </div>
   </section>
   
   <!-- username entry form -->
   <section id="user-input">
-    <div class="user-area row">
-      <div class="col s4 offset-s4">
+    <div class="user-area">
         <form id="username-form" method="post" action=“javascript:void(0);”>
           <label for="username">Enter Username: </label>
           <input type="text" id="user" name="username" required><br>
           <input type="submit" class="submit-user" id="next-section" value="Submit" />
         </form>
-      </div>
     </div>
   </section>
   
-  <!-- welcome note -->
+  <!-- welcome note section -->
   <section id="welcome" class="hide">
-    <div class="welcome-area container">
-      <div class="row col s6">
+    <div class="welcome-area">
         <p id="welcome-paragraph"></p>
       </div>
-      <div class="row col s12">
+      <div>
         <button data-type="start" id="start">Start</button>
       </div>
-    </div>
   </section>
   
-  <!-- quiz questions -->
+  <!-- quiz questions section -->
   <section id="quiz" class="hide">
     <form id="quiz-form">
-     <div class="questions-area container">
-        <div class="questions row s6">
+     <div class="questions-area">
+        <div class="questions">
           <p id="question"></p>
           <p id="answer-container" class="answer-div"></p>
         </div>
       </div>
-      <div class="btns1 row col s12">
+      <div>
         <button data-type="submit" id="submitBtn">Submit Answer</button>
       </div>
     </form>
   </section>
   
-  <!-- quiz finish -->
+  <!-- quiz finish section -->
   <section id="finish" class="hide">
-    <div class="finish-btns">
+    <div class="finish-content">
       <p id="finish-container" class="finish-div"></p>
       <button data-type="retry" id="tryAgain" onclick="location.href='index.html'">Try Again</button>
       <!-- Credit: referenced https://stackoverflow.com/questions/19588708/how-to-use-both-onclick-and-target-blank -->
@@ -80,7 +71,7 @@
     </div>
   </section>
   
-  <!-- score -->
+  <!-- score tally section -->
   <section id="tally" class="hide">
     <div class="score-area">
       <p class="scores">Correct Answers: <span id="score">0</span></p>
@@ -91,15 +82,11 @@
 </div>
 
 <!-- footer -->
-<footer class="row col s12"> <img class="responsive-img" src="assets/images/celtic_decorative_line.png" alt="Celtic Decorative Line"> </footer>
+<footer>
+  <img class="responsive-img" src="assets/images/celtic_decorative_line.png" alt="Celtic Decorative Line">
+</footer>
 
 <!--JavaScript script.js at end of body for optimized loading--> 
 <script type="text/javascript" src="assets/js/script.js"></script> 
-<!-- Import jQuery before materialize.js --> 
-<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  -->
-<!--JavaScript materialize.js at end of body for optimized loading--> 
-<!-- <script type="text/javascript" src="assets/js/materialize.js"></script>  -->
-<!--JavaScript materialize.min.js at end of body for optimized loading--> 
-<!-- <script type="text/javascript" src="assets/js/materialize.min.js"></script> -->
 </body>
 </html>
