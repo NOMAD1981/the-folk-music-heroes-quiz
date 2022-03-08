@@ -4,9 +4,9 @@
 /* Global style */
 
 *{
-    margin:0;
-    padding:0;
-    border:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body {
@@ -44,7 +44,7 @@ p {
 }
 
 button  {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 

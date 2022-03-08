@@ -24,7 +24,7 @@ form.addEventListener('submit', function (event) {
     p.innerHTML = "Welcome to The Folk Music Heroes Quiz " + user.value + "! Here you will get to test your folk music knowledge and I can't promise it will be easy. Click start to get the ball rolling..";
 
     document.getElementById('welcome-paragraph').appendChild(p);
-    console.debug('submit username-form');
+    console.log('submit username-form');
 });
 
 // define welcome section
@@ -90,6 +90,7 @@ function startQuiz() {
  * then remove the current question so it won't be asked again
  */
 function getQuizQuestions() {
+
 	// call a random question from quizQuestions array
     let randomQuestion = Math.floor(Math.random() * quizQuestions.length);
 
@@ -100,7 +101,7 @@ function getQuizQuestions() {
     document.getElementById('question').innerText = currentQuestion.question;
 
 	// define answer html
-	let answerHTML = '';
+	let answerHTML = ''; 
 
 	// define i and populate
 	let i= 0;
@@ -108,6 +109,7 @@ function getQuizQuestions() {
 		// generate answer abc radio button choices
 		// Credit: referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
 		// Credit: referenced https://www.techiedelight.com/create-radio-button-dynamically-javascript/
+		// Credit: referenced https://www.sitepoint.com/simple-javascript-quiz/
 		answerHTML = answerHTML + '<label>' + String.fromCharCode(65+i) + '<label>:'
 				+'<input type="radio" name="choice" value="' + String.fromCharCode(97+i) + '">'
 			+ answer + '<br>';
@@ -130,10 +132,15 @@ function checkAnswer() {
 	console.debug(form);
 	if (form.elements['choice'].value == currentQuestion.correctAnswer){
 	  correctAnswers++;
+	  alert("Hey! You got it right!");
 	} else {
 	  incorrectAnswers++;
+	  alert("Sorry, that answer was incorrect!");
 	}
 	questionCount++;
+	if (quizQuestions.length === 0 || questionCount > totalQuestions) {
+        displayResults();
+    }
   }
 
 // update quiz stats
