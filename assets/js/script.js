@@ -70,7 +70,7 @@ let acceptAnswer = false;
 let quizQuestions = [];
 let questionCount = 0;
 let currentQuestion = {};
-const totalQuestions = 3;
+const totalQuestions = 10;
 
 /**
  * Function to call the quiz variables and call questions from the getQuizQuestions function
