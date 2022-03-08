@@ -70,7 +70,7 @@ let acceptAnswer = false;
 let quizQuestions = [];
 let questionCount = 0;
 let currentQuestion = {};
-const totalQuestions = 10;
+const totalQuestions = 3;
 
 /**
  * Function to call the quiz variables and call questions from the getQuizQuestions function
@@ -123,9 +123,6 @@ document.getElementById('answer-container').innerHTML = '<div class="answer-div"
 quizQuestions.splice(randomQuestion, 1);
 }
 
-// define finish section
-let quizFinish = document.getElementById('finish');
-
 /**
  * Use form element to to check for correct answers,
  * incorrect answers and to log the question count
@@ -141,21 +138,25 @@ function checkAnswer() {
 	  alert("Sorry, that answer was incorrect!");
 	}
 	questionCount++;
-	if (quizQuestions.length === 0 || questionCount > totalQuestions) {
+	if (quizQuestions.length === 0 || questionCount === totalQuestions) {
 		displayResult();
 	}
   }
+
+// define finish section
+let quizFinish = document.getElementById('finish');
+
+// display quiz finish with overall result, along with retry and play music buttons
+function displayResult() {
+	quizSection.classList.add('hide');
+	quizFinish.classList.remove('hide');
+}
 
 // update quiz stats
 function updateStatistics(){
 	document.getElementById('score').innerHTML = correctAnswers;
 	document.getElementById('incorrect').innerHTML = incorrectAnswers;
 	document.getElementById('question-counter').innerHTML = questionCount;
-}
-
-// display overall result, along with retry and play music buttons
-function displayResult() {
-	
 }
 
 // quiz questions array
@@ -316,7 +317,7 @@ let questionsAndAnswers = [
     {
 		question: "Who wrote and performed the song 'Pancho and Lefty'?",
 		answers: [
-			'Townes_Van_Zandt',
+			'Townes Van Zandt',
 			'Emmylou Harris',
 			'Don Williams'
 		],

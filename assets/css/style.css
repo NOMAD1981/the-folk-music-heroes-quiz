@@ -38,7 +38,7 @@ p {
 .welcome-area,
 .questions-area,
 .score-area {
-    padding: 50px 50px;
+    padding-top: 50px;
     width: 50%;
     margin: auto;
 }
