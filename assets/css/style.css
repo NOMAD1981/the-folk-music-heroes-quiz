@@ -12,7 +12,7 @@
 body {
     background: url("../images/celtic_background.png") no-repeat center center;
     background-size: cover;
-    height: 100vh;
+    height: 100wh;
     font-family: 'Londrina Solid', cursive;
     color: #354933;
     text-align: center;
@@ -47,6 +47,10 @@ p {
 
 button  {
     padding-top: 30px;
+}
+
+button:hover {
+    background-color: #60785e;
 }
 
 

@@ -153,6 +153,9 @@ function displayResult() {
 
 	// place finish note in the html
 	document.getElementById('finish-container').innerHTML = '<div class="finish-div">' + "Well done on completing the quiz " + user.value + "! You can choose to play again, or simply play some music after all your hard work!" + '</div>';
+	document.getElementById('playMusic').addEventListener('click',function(event){
+		
+	  })
 }
 
 // update quiz stats

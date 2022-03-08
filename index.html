@@ -74,8 +74,9 @@
   <section id="finish" class="hide">
     <div class="finish-btns">
       <p id="finish-container" class="finish-div"></p>
-      <button data-type="retry" id="tryAgain">Try Again</button>
-      <button data-type="music" id="playMusic">Play Music</button>
+      <button data-type="retry" id="tryAgain" onclick="location.href='index.html'">Try Again</button>
+      <!-- Credit: referenced https://stackoverflow.com/questions/19588708/how-to-use-both-onclick-and-target-blank -->
+      <button data-type="music" id="playMusic" onclick="window.open('https://www.youtube.com/watch?v=6gzuP2hgR3s', '_blank')" value="Listen to some classic folk on YouTube">Play Music</button>
     </div>
   </section>
   
