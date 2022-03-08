@@ -130,6 +130,13 @@ function checkAnswer(){
 	questionCount++;
   }
 
+  // update quiz stats
+function updateStatistics(){
+	document.getElementById('score').innerHTML = correctAnswers;
+	document.getElementById('incorrect').innerHTML = incorrectAnswers;
+	document.getElementById('question-counter').innerHTML = questionCount;
+}
+
 // quiz questions array
 let questionsAndAnswers = [
 	{
