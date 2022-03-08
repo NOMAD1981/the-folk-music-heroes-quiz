@@ -54,10 +54,10 @@ button  {
     padding-top: 30px;
 }
 
-button:hover {
+button:hover,
+#next-section.submit-user:hover {
     background-color: #60785e;
 }
-
 
 label {
     color:#354933;

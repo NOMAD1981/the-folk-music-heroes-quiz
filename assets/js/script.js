@@ -14,7 +14,7 @@ form.addEventListener('submit', function (event) {
     this.style['display'] = 'none';
 	// show welcome and score tally sections
 	welcomeMessage.classList.remove('hide');
-	//console log username to test
+	// console log username to test
     console.debug('Username:', user.value);
     event.preventDefault();
 
@@ -153,9 +153,8 @@ function displayResult() {
 
 	// place finish note in the html
 	document.getElementById('finish-container').innerHTML = '<div class="finish-div">' + "Well done on completing the quiz " + user.value + "! You can choose to play again, or simply play some music after all your hard work!" + '</div>';
-	document.getElementById('playMusic').addEventListener('click',function(event){
-		
-	  })
+	// document.getElementById('playMusic').addEventListener('click', function(event) {
+	// })
 }
 
 // update quiz stats
