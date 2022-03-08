@@ -3,7 +3,7 @@
 
 /* Global style */
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -11,8 +11,7 @@
 
 body {
     background: url("../images/celtic_background.png") no-repeat center center;
-    background-size: cover;
-    height: 100wh;
+    background-size: 100wh;
     font-family: 'Londrina Solid', cursive;
     color: #354933;
     text-align: center;
@@ -21,18 +20,24 @@ body {
 h1 {
     font-weight: 900;
     font-size: 2.5rem;
+    letter-spacing: 1px;
     color: #a88a6d;
     margin-top: -20px;
 }
 
 p {
     font-size: 2rem;
+    letter-spacing: 1px;
 }
 
 .responsive-img {
     margin-top: 50px;
     max-width: 100%;
     height: auto;
+}
+
+#main-container {
+min-height: 85vh;
 }
 
 #username-form,
@@ -58,6 +63,7 @@ label {
     color:#354933;
     font-size: 2.5rem;
     font-weight: 300;
+    letter-spacing: 1px;
 }
 
 input#user {
@@ -69,6 +75,7 @@ input#user {
     font-family: 'Londrina Solid', cursive;
     font-size: 1.5rem;
     font-weight: 300;
+    letter-spacing: 1px;
     color: #354933;
 }
 
@@ -80,6 +87,7 @@ input[type="radio"] {
 .answer-div label {
     font-size: 2rem;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 
 button, .submit-user {
@@ -91,6 +99,7 @@ button, .submit-user {
     font-size: 1.5rem;
     font-weight: 300;
     text-transform: uppercase;
+    letter-spacing: 1px;
     border-radius: 12px;
 }
 
@@ -103,3 +112,77 @@ button, .submit-user {
     text-align: left;
 }
 
+@media screen and (max-width: 540px) {
+    h1 {
+        padding-top: 5px;
+        font-size: 2rem;
+    }
+    
+    #main-container {
+    min-height: 85vh;
+    }
+    
+    #username-form,
+    .welcome-area,
+    .questions-area,
+    .score-area,
+    #finish {
+        width: 80%;
+    }
+
+    .answer-div label {
+        padding-top: 10px;
+        font-size: 1.3rem;
+    }
+    
+    button:hover {
+        background-color: #60785e;
+    }
+
+    label {
+        font-size: 2rem;
+    }
+    
+    input#user {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 380px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+    
+    #main-container {
+    min-height: 85vh;
+    }
+    
+    #username-form,
+    .welcome-area,
+    .questions-area,
+    .score-area,
+    #finish {
+        width: 90%;
+    }
+    
+    button:hover {
+        background-color: #60785e;
+    }
+
+    label {
+        font-size: 1.6rem;
+    }
+    
+    input#user {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    button, .submit-user {
+        margin-top: 20px;
+        padding: 5px 10px;
+        font-size: 1.3rem;
+    }
