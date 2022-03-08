@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Get the user input element
-let user = document.getElementById('user');
+let user = document.getElementById('username');
 
 // Get the form and attach an event listener to it
 let form = document.getElementById('username-form');
