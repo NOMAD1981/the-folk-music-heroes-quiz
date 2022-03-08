@@ -37,7 +37,8 @@ p {
 #username-form,
 .welcome-area,
 .questions-area,
-.score-area {
+.score-area,
+#finish {
     padding-top: 50px;
     width: 50%;
     margin: auto;

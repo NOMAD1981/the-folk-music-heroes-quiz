@@ -138,7 +138,7 @@ function checkAnswer() {
 	  alert("Sorry, that answer was incorrect!");
 	}
 	questionCount++;
-	if (quizQuestions.length === 0 || questionCount === totalQuestions) {
+	if (quizQuestions.length === 0 || questionCount >= totalQuestions) {
 		displayResult();
 	}
   }
@@ -150,6 +150,9 @@ let quizFinish = document.getElementById('finish');
 function displayResult() {
 	quizSection.classList.add('hide');
 	quizFinish.classList.remove('hide');
+
+	// place finish note in the html
+	document.getElementById('finish-container').innerHTML = '<div class="finish-div">' + "Well done on completing the quiz " + user.value + "! You can choose to play again, or simply play some music after all your hard work!" + '</div>';
 }
 
 // update quiz stats
