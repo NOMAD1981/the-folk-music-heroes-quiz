@@ -45,7 +45,7 @@
         <p id="welcome-paragraph"></p>
       </div>
       <div>
-        <button data-type="start" onclick="" id="start">Start</button>
+        <button data-type="start" onclick="audio.play()" id="start">Start</button>
       </div>
   </section>
   
@@ -91,6 +91,11 @@
   <img class="responsive-img" src="assets/images/celtic_decorative_line.png" alt="Celtic Decorative Line">
 </footer>
 
+<!-- play audio js -->
+<script>
+  var audio = new Audio("assets/audio/234738__fenrirfangs__guitar-strum.wav");
+  audio.play();
+  </script>
 <!-- Sweetalert2 external files linking for alerts Credit: https://sweetalert2.github.io -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!--JavaScript script.js at end of body for optimized loading--> 
