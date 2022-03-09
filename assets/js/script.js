@@ -131,18 +131,18 @@ function checkAnswer() {
 	console.debug(form);
 	if (form.elements['choice'].value == currentQuestion.correctAnswer){
 	  correctAnswers++;
-	  Swal.fire(
-		'Good job!',
-		'That answer was correct!',
-		'success'
+	//   Swal.fire(
+	// 	'Good job!',
+	// 	'That answer was correct!',
+	// 	'success'
 	  )
 	} else {
 	  incorrectAnswers++;
-	  Swal.fire({
-		icon: 'error',
-		title: 'Oops...',
-		text: 'Sorry, that answer was incorrect!',
-	  })
+	//   Swal.fire({
+	// 	icon: 'error',
+	// 	title: 'Oops...',
+	// 	text: 'Sorry, that answer was incorrect!',
+	//   })
 	}
 	questionCount++;
 	if (quizQuestions.length === 0 || questionCount >= totalQuestions) {
