@@ -7,18 +7,18 @@ Click [here](https://nomad1981.github.io/the-folk-music-heroes-quiz/) to test yo
 
 # Contents
 * [**User Experience UX**](<#user-experience-ux>)
-    *  [User Stories](<#user-stories>)
-    * [Wireframes](<#wireframes>)
-    * [Site Structure](<#site-structure>)
-    * [Design Choices](<#design-choices>)
-	      *  [Illustrative Graphics](<#illustrative-graphics>)
-        *  [Typography](<#typography>)
-        *  [Colour Scheme](<#colour-scheme>)
+    * [**User Stories**](<#user-stories>)
+    * [**Wireframes**](<#wireframes>)
+    * [**Site Structure**](<#site-structure>)
+    * [**Design Choices**](<#design-choices>)
+	    *  [**Illustrative Graphics**](<#illustrative-graphics>)
+        *  [**Typography**](<#typography>)
+        *  [**Colour Scheme**](<#colour-scheme>)
 * [**Features**](<#features>)
     * [**Existing Features**](<#existing-features>)
-        * [Welcome section](<#welcome-section>)
-        * [Quiz and score sections](<#quiz-and-score-sections>)
-        * [Quiz completion](<#quiz-completion>)
+        * [**Welcome section**](<#welcome-section>)
+        * [**Quiz and score sections**](<#quiz-and-score-sections>)
+        * [**Quiz completion**](<#quiz-completion>)
     * [**Removed Features**](<#removed-features>)
     * [**Future Features**](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
@@ -51,10 +51,25 @@ Click [here](https://nomad1981.github.io/the-folk-music-heroes-quiz/) to test yo
 [Back to top](<#contents>)
 
 ## Wireframes
+Initial wireframes were created in InDesign for a basic visual of pages on desktop and smaller devices. Some design choices and quiz struture changed during production, but the overall feel of the quiz remains the same.
 
-![Web Wireframes](insert image link later)
+### **Desktop Wireframes**
+![Desktop Wireframe 1](assets/readme-images/desktop_wireframe.jpg)
+![Desktop Wireframe 2](assets/readme-images/desktop_wireframe2.jpg)
+![Desktop Wireframe 3](assets/readme-images/desktop_wireframe3.jpg)
+![Desktop Wireframe 4](assets/readme-images/desktop_wireframe4.jpg)
+![Desktop Wireframe 5](assets/readme-images/desktop_wireframe5.jpg)
+![Desktop Wireframe 6](assets/readme-images/desktop_wireframe6.jpg)
+![Desktop Wireframe 7](assets/readme-images/desktop_wireframe7.jpg)
 
-![Mobile Wireframes](insert image link later)
+### **Mobile/Devices Wireframes**
+![Mobile Wireframes 1](assets/readme-images/small_devices_wireframe.jpg)
+![Mobile Wireframes 2](assets/readme-images/small_devices_wireframe2.jpg)
+![Mobile Wireframes 3](assets/readme-images/small_devices_wireframe3.jpg)
+![Mobile Wireframes 4](assets/readme-images/small_devices_wireframe4.jpg)
+![Mobile Wireframes 5](assets/readme-images/small_devices_wireframe5.jpg)
+![Mobile Wireframes 6](assets/readme-images/small_devices_wireframe6.jpg)
+![Mobile Wireframes 7](assets/readme-images/small_devices_wireframe7.jpg)
 
 [Back to top](<#contents>)
 
@@ -138,15 +153,17 @@ The colour palette:
 	* This feature was styled using [Sweetalert2](https://sweetalert2.github.io/) to improve the visual, as per images below. 
 	* On the advice of my mentor, to improve user experience, this has been removed. 
 		* I had wondered about the inclusion myself, but went ahead with it since it was heavily covered in the course.
-* Initially, [Materialize](https://materializecss.com/) was used to handle css functionality. However, this interfered with dynamically generated form inputs. It was easier, and quicker, to simply write a small portion of css and media queries instead.
 
 ![Correct answer using Sweetalert2](assets/readme-images/correct_sweetalert2.jpg)
    
 ![Incorrect answer using Sweetalert2](assets/readme-images/incorrect_sweetalert2.jpg)
 
+* Initially, [Materialize](https://materializecss.com/) was used to handle css functionality. However, this interfered with dynamically generated form inputs. It was easier, and quicker, to simply write a small portion of css and media queries instead.
+
 ## Future Features
 * Future features might include a visual menu of different music genres to choose from for the quiz, with customised graphics for each.
 * It could also include levels, although this might be easier to achieve with more general genres such as '80's Pop'.
+* An item of information in the form of trivia could be displayed to the user after each correct answer.
 
 [Back to top](<#contents>)
 
@@ -248,7 +265,10 @@ No issues were found across browsers.
 ## Additional Testing
 ### Lighthouse
 
+#### **Mobile Score**
 ![Lighthouse mobile score](assets/readme-images/lighthouse-mobile-score.jpg)
+
+#### **Desktop Score**
 ![Lighthouse desktop score](assets/readme-images/lighthouse-desktop-score.jpg)
 
 
@@ -259,8 +279,7 @@ The project was posted to [Peer Code Review](https://code-institute-room.slack.c
 [Back to top](<#contents>)
 
 # Deployment
-### **To deploy the project**
-The site was deployed to GitHub pages. The steps to deploy a site are as follows:
+### **Deploy the project**
   1. In the GitHub repository, navigate to the **Settings** tab.
   2. From here, navigate to the **Pages** by either scrolling down to the GitHub Pages section, or by selecting in the left menu.
   3. Under **Source**, select the branch **master** or **main**, then click **save**.
@@ -269,13 +288,13 @@ The site was deployed to GitHub pages. The steps to deploy a site are as follows
 ![GitHub pages deployed image](assets/readme-images/github-deployed.jpg)
 
 
-### **To fork the repository on GitHub**
+### **Fork the repository on GitHub**
 A copy of the GitHub Repository can be made by forking from a user account. This copy can be viewed and changed without affecting the original repository. 
 1. Log in to **GitHub** and locate the repository.
 2. I have chosen to fork Animal Pairs by Eawan Colquhoun as an example. On the right hand side you will note a fork icon and a button named **Fork**. Click on the button to create a copy of the original repository in your own GitHub Account.
 ![GitHub forking process image](assets/readme-images/example-repo-fork.jpg)
 
-### **Creating a local project clone**
+### **Create a local clone**
 
 1. Click on the **code** tab at the top of the repository.
 2. Under **HTTPS**, click the icon to the right to copy the given URL.
@@ -305,6 +324,6 @@ A copy of the GitHub Repository can be made by forking from a user account. This
 
 [Back to top](<#contents>)
 # Acknowledgements
-This was completed as my submission for Project 2 in the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). I would like to thank my cohort facilitator Kasia Bogucka, my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), and all at Code Institute for their guidance and support.
+This was completed as my submission for Project 2 in the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). I would like to thank my cohort facilitator **Kasia Bogucka**, my mentor **Precious Ijege**, and all at Code Institute for their guidance and support.
 
 [Back to top](<#contents>)
