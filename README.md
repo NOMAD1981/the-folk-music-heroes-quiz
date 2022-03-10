@@ -68,13 +68,6 @@ Initial wireframes were created in InDesign for a basic visual of pages on deskt
     <td><img src="assets/readme-images/desktop_wireframe6.jpg" width=400></td>
     <td><img src="assets/readme-images/desktop_wireframe7.jpg" width=400></td>
   </tr>
-![Desktop Wireframe 1](assets/readme-images/desktop_wireframe.jpg)
-![Desktop Wireframe 2](assets/readme-images/desktop_wireframe2.jpg)
-![Desktop Wireframe 3](assets/readme-images/desktop_wireframe3.jpg)
-![Desktop Wireframe 4](assets/readme-images/desktop_wireframe4.jpg)
-![Desktop Wireframe 5](assets/readme-images/desktop_wireframe5.jpg)
-![Desktop Wireframe 6](assets/readme-images/desktop_wireframe6.jpg)
-![Desktop Wireframe 7](assets/readme-images/desktop_wireframe7.jpg)
 
 [Back to top](<#contents>)
 
