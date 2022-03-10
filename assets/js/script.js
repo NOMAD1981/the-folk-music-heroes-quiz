@@ -166,7 +166,9 @@ function displayResult() {
 // update quiz stats
 function updateStatistics(){
 	document.getElementById('score').innerHTML = correctAnswers;
+	document.getElementById('score').style.color = "Green";
 	document.getElementById('incorrect').innerHTML = incorrectAnswers;
+	document.getElementById('incorrect').style.color = "Red";
 	document.getElementById('question-counter').innerHTML = questionCount;
 }
 
