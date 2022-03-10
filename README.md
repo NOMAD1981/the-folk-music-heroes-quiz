@@ -23,9 +23,19 @@ Click [here](https://nomad1981.github.io/the-folk-music-heroes-quiz/) to test yo
     * [**Future Features**](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
+    * [**Code Validation**](<#code-validation>)
+    * [**Responsiveness**](<#responsiveness>)
+    * [**Browser Compatibility**](<#browser-compatibility>)
+    * [**User Stories**](<#user-stories>)
+    * [**Known Bugs**](<#known-bugs>)
+        * [**Resolved**](<#resolved>)
+        * [**Unresolved**](<#unresolved>)
+    * [**Additional Testing**](<#additional-testing>)
+        * [**Lighthouse**](<#lighthouse>)
+        * [**Peer Code Review**](<#peer-code-review>)
 * [**Deployment**](<#deployment>)
 * [**Credits**](<#credits>)
-    * [**Content**](<#content>)
+    * [**Development Issues**](<#development-issues>)
     * [**Audio**](<#audio>)
 *  [**Acknowledgements**](<#acknowledgements>)
 
@@ -82,7 +92,7 @@ Once the quiz is complete the user can choose to try again, or they have the opt
     * The colour palette is the same used in the illustrative graphics; resources purchased through [DesignCuts](https://www.designcuts.com/product/the-international-brand-collection/) for use in my own client graphic projects (as mentioned above). The colours have an earthy feel to suit the folk related theme of the site. 
 
 The colour palette:
-![Background-Color](assets/readme-images/background-color.png)
+![Colour Palette](assets/readme-images/colour_palette.jpg)
 
 [Back to top](<#contents>)
 # Features
@@ -91,7 +101,7 @@ The colour palette:
     * The user is met with the overall graphic elements to frame the screen throughout, and a user input area to enter their username.
     * Once the user has submitted their username, the section is hidden and they provided with the welcome section.
 
-![User input](insert image here)
+![User input](assets/readme-images/user-input-section.jpg)
 
 [Back to top](<#contents>)
 * ### Welcome section
@@ -100,7 +110,7 @@ The colour palette:
     * Due to the nature of the quiz, difficulty levels are deliberately not included. As it is a niche subject, the questions asked are all on the higher level of difficulty, unless the user is a folk music expert.
     * The user is invited to click start to get the quiz running, the section is then hidden and a guitar strum audio sound is provided on click.
 
-![Welcome section](insert image here)
+![Welcome section](assets/readme-images/welcome-section.jpg)
 
 [Back to top](<#contents>)
 * ### Quiz and score sections
@@ -110,11 +120,16 @@ The colour palette:
     * Questions are populated randomly from an array of 30. Each questions that is asked is also removed once asked so it can't be asked again during the quiz round.
     * Once the total of 10 questions is met, the user is presented with the final section.
     
-   ![Quiz and score sections](insert image here)
+![Quiz and score sections](assets/readme-images/quiz-score-section.jpg)
 
 [Back to top](<#contents>)
 * ### Quiz completion
     * On the final screen the user is met with a congratulatory message. They are then presented with a button to [try again](https://nomad1981.github.io/the-folk-music-heroes-quiz/), which brings them back to the start, and also a button to [play music](https://www.youtube.com/watch?reload=9&v=6gzuP2hgR3s), which brings them to a folk music compilation on YouTube.
+
+![Quiz Completion](assets/readme-images/completed-section.jpg)
+
+
+![YouTube Compilation](assets/readme-images/youtube-compilation.jpg)
 
 [Back to top](<#contents>)
 
@@ -125,9 +140,9 @@ The colour palette:
 		* I had wondered about the inclusion myself, but went ahead with it since it was heavily covered in the course.
 * Initially, [Materialize](https://materializecss.com/) was used to handle css functionality. However, this interfered with dynamically generated form inputs. It was easier, and quicker, to simply write a small portion of css and media queries instead.
 
-   ![Correct answer using Sweetalert2](insert image here)
+![Correct answer using Sweetalert2](assets/readme-images/correct_sweetalert2.jpg)
    
-      ![Incorrect answer using Sweetalert2](insert image here)
+![Incorrect answer using Sweetalert2](assets/readme-images/incorrect_sweetalert2.jpg)
 
 ## Future Features
 * Future features might include a visual menu of different music genres to choose from for the quiz, with customised graphics for each.
@@ -147,7 +162,7 @@ The colour palette:
 * [Github](https://github.com/) - used to edit and host the web page.
 * [StackEdit](https://stackedit.io) - used for prepping the README.md file
 * [Sweetalert2](https://sweetalert2.github.io/) - Initially used to prettify alert boxes, but the idea was axed based on feedback from my mentor.
-* [Materialise](https://materializecss.com/) - Initially used to try out the grid, but it caused problems with the dynamically generated input radio fields. It was faster, and easier, for me to just quickly write some straight css with some media queries, but I will revisit when I have time to review fully.
+* [Materialize](https://materializecss.com/) - Initially used to try out the grid, but it caused problems with the dynamically generated input radio fields. It was faster, and easier, for me to just quickly write some straight css with some media queries, but I will revisit when I have time to review fully.
 
 [Back to top](<#contents>)
 
@@ -160,21 +175,22 @@ Passing the code through the validators revealed a few minor errors:
 	* Required section headings, which I had intended to add towards the end anyway.
 	* There was an issue with the nesting of a div inside a p element, which needed to be corrected.
 
-![W3C Markup Validator End Result](insert image)
+![W3C Markup Validator End Result](assets/readme-images/html-no-errors.jpg)
 
 * CSS:
 	* Revealed a parsing error, caused by a missing closing tag on media queries. This was easily resolved.
 
-![CSS Validator End Result](insert image)
+![CSS Validator End Result](assets/readme-images/css-no-errors.jpg)
 
 * JSHint:
 	* This revealed missing semi-colons on lines 64, 138 and 145, which have been corrected.
 	* Two unused variables, which were removed.
 	* Two items required a change to dot notation from bracket notation, which was completed.
+    * The 19 warnings remaining are simply stating 'let' and 'const' are available in ES6.
 
-![CSS Validator End Result](insert image)
+![JSHint End Result](assets/readme-images/js-hint-no-errors.jpg)
 
-## Responsiveness Test
+## Responsiveness
 
 The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/). No issues were found throughout devices.
 
@@ -209,7 +225,8 @@ No issues were found across browsers.
 	* The design overall is simple and clean, with clear methods of navigation through the quiz in a linear fashion. The graphics are kept simple, with muted, earthy colour usage.
 
 ## Known Bugs
-* ### Resolved
+
+### **Resolved**
 * #### The username input was not logging the username to the console, and not entering the user.value in the welcome message.
     * My mentor pointed out that it was using the wrong method, get when it should have been post, and also required the action javascript:void(0); However, this still did not resolve the issue.
     * On further inspection, I realised it needed to be added to a form event listener. The user was being called before it was submitted, and so it was not logging to console or displaying in welcome message since it didn't exist yet.
@@ -218,7 +235,7 @@ No issues were found across browsers.
 	* Tried a for loop on current answers, but it affected the radio results (as it should, in hindsight).
 	* Resolved by adding an additional if statement in my check answers function to check the question count against total questions, which resolved the issue.
 
-* ### Unresolved
+### **Unresolved**
 
 * #### The user can submit an answer, without selecting a radio button
 	* It simply lists as an incorrect answer, which is correct at least.
@@ -226,13 +243,13 @@ No issues were found across browsers.
 	* I have been two days researching the issue online, checked in with 4 people at student support and discussed this with my mentor, with no resolution.
 	* I had written the following code to replace lines 104 through 118 in my js file, but it is so close to deadline, I really don't want to go messing with the quiz any further. It would require a label to be inserted somehow also:
 
-![Unresolved bug possible replacement code - lines 104 - 118 of current js](insert image)
+![Unresolved bug possible replacement code - lines 104 - 118 of current js](assets/readme-images/troubleshooting_radio_required_bug.jpg)
 
 ## Additional Testing
 ### Lighthouse
 
-![Lighthouse mobile results](insert image here)
-![Lighthouse desktop results](insert image here)
+![Lighthouse mobile score](assets/readme-images/lighthouse-mobile-score.jpg)
+![Lighthouse desktop score](assets/readme-images/lighthouse-desktop-score.jpg)
 
 
 ### Peer code review
@@ -245,34 +262,33 @@ The project was posted to [Peer Code Review](https://code-institute-room.slack.c
 ### **To deploy the project**
 The site was deployed to GitHub pages. The steps to deploy a site are as follows:
   1. In the GitHub repository, navigate to the **Settings** tab.
-  2. Once in Settings, navigate to the **Pages** tab on the left hand side.
-  3. Under **Source**, select the branch to **master** or **main**, then click **save**.
-  4. Once the master branch has been selected, the page will be automatically refreshed with a green ribbon display to indicate the successful deployment.
+  2. From here, navigate to the **Pages** by either scrolling down to the GitHub Pages section, or by selecting in the left menu.
+  3. Under **Source**, select the branch **master** or **main**, then click **save**.
+  4. The page may take a short time to deploy, at which point you will see a green ribbon to indicate the successful deployment.
 
-![GitHub pages deployed image](insert image)
+![GitHub pages deployed image](assets/readme-images/github-deployed.jpg)
 
-  The live link to the Github repository can be found here - 
 
 ### **To fork the repository on GitHub**
-A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;
-1. Log in to **GitHub** and locate the [repository](https://github.com/NOMAD1981/the-folk-music-heroes-quiz).
-2. On the right hand side of the page inline with the repository name is a button called **'Fork'**, click on the button to create a copy of the original repository in your GitHub Account.
-![GitHub forking process image](insert image)
+A copy of the GitHub Repository can be made by forking from a user account. This copy can be viewed and changed without affecting the original repository. 
+1. Log in to **GitHub** and locate the repository.
+2. I have chosen to fork Animal Pairs by Eawan Colquhoun as an example. On the right hand side you will note a fork icon and a button named **Fork**. Click on the button to create a copy of the original repository in your own GitHub Account.
+![GitHub forking process image](assets/readme-images/example-repo-fork.jpg)
 
-### **To create a local clone of this project**
-The method from cloning a project from GitHub is below:
+### **Creating a local project clone**
 
-1. Under the repository’s name, click on the **code** tab.
-2. In the **Clone with HTTPS** section, click on the clipboard icon to copy the given URL.
-![Cloning image](insert image)
-3. In your IDE of choice, open **Git Bash**.
-4. Change the current working directory to the location where you want the cloned directory to be made.
-5. Type **git clone**, and then paste the URL copied from GitHub.
-6. Press **enter** and the local clone will be created.
+1. Click on the **code** tab at the top of the repository.
+2. Under **HTTPS**, click the icon to the right to copy the given URL.
+3. Open **Git Bash** in your IDE.
+4. Change the working directory to the location where you want the cloned directory to reside.
+5. Type **git clone** followed by the URL copied from GitHub.
+6. Press **enter** to create a local clone.
+
+![Cloning image](assets/readme-images/https-clone.jpg)
 
 [Back to top](<#contents>)
 # Credits
-* ## Content
+* ## Development
     * [Stack Overflow](https://stackoverflow.com/questions/57698005/allow-only-numbers-and-letters-to-input-string) - pattern input on user form.
     * [Stack Overflow](https://stackoverflow.com/questions/19588708/how-to-use-both-onclick-and-target-blank) - using both onclick and target _blank on the same element.
     * [Code Grepper](https://www.codegrepper.com/code-examples/javascript/how+to+add+a+paragraph+in+html+using+javascript) - referenced while trying to call the welcome paragraph and add text via javascript.
