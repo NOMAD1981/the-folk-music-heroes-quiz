@@ -109,7 +109,7 @@ function getQuizQuestions() {
 		// Credit: referenced https://www.techiedelight.com/create-radio-button-dynamically-javascript/
 		// Credit: referenced https://www.sitepoint.com/simple-javascript-quiz/
 		answerHTML = answerHTML + '<label>' + String.fromCharCode(65+i) + '</label>:'
-				+'<input type="radio" name="choice" value="' + String.fromCharCode(97+i) + '" required="required">'
+				+'<input type="radio" name="choice" value="' + String.fromCharCode(97+i) + '" required>'
 			+ answer + '<br>';
 		i++;
 	});
