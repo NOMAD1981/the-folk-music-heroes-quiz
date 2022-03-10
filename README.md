@@ -9,16 +9,18 @@ Click [here](https://nomad1981.github.io/the-folk-music-heroes-quiz/) to test yo
 * [**User Experience UX**](<#user-experience-ux>)
     * [**User Stories**](<#user-stories>)
     * [**Wireframes**](<#wireframes>)
+        * [**Desktop Wireframes**](<#desktop-wireframes>)
+        * [**Mobile/Devices Wireframes**](<#smaller-devices-wireframes>)
     * [**Site Structure**](<#site-structure>)
     * [**Design Choices**](<#design-choices>)
 	    *  [**Illustrative Graphics**](<#illustrative-graphics>)
         *  [**Typography**](<#typography>)
         *  [**Colour Scheme**](<#colour-scheme>)
 * [**Features**](<#features>)
-    * [**Existing Features**](<#existing-features>)
-        * [**Welcome section**](<#welcome-section>)
-        * [**Quiz and score sections**](<#quiz-and-score-sections>)
-        * [**Quiz completion**](<#quiz-completion>)
+    * [**Quiz Structure and Function**](<#quiz-structure-and-function>)
+        * [**Welcome Section**](<#welcome-section>)
+        * [**Quiz and Score Sections**](<#quiz-and-score-sections>)
+        * [**Quiz Completion**](<#quiz-completion>)
     * [**Removed Features**](<#removed-features>)
     * [**Future Features**](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
@@ -34,6 +36,9 @@ Click [here](https://nomad1981.github.io/the-folk-music-heroes-quiz/) to test yo
         * [**Lighthouse**](<#lighthouse>)
         * [**Peer Code Review**](<#peer-code-review>)
 * [**Deployment**](<#deployment>)
+    * [**Deploy the Project**](<#deploy-the-project>)
+    * [**For a Repository on GitHub**](<#fork-a-repository-on-github>)
+    * [**Create a Local Clone**](<#create-a-local-clone>)
 * [**Credits**](<#credits>)
     * [**Development Issues**](<#development-issues>)
     * [**Audio**](<#audio>)
@@ -62,7 +67,9 @@ Initial wireframes were created in InDesign for a basic visual of pages on deskt
 ![Desktop Wireframe 6](assets/readme-images/desktop_wireframe6.jpg)
 ![Desktop Wireframe 7](assets/readme-images/desktop_wireframe7.jpg)
 
-### **Mobile/Devices Wireframes**
+[Back to top](<#contents>)
+
+### **Smaller Devices Wireframes**
 ![Mobile Wireframes 1](assets/readme-images/small_devices_wireframe.jpg)
 ![Mobile Wireframes 2](assets/readme-images/small_devices_wireframe2.jpg)
 ![Mobile Wireframes 3](assets/readme-images/small_devices_wireframe3.jpg)
@@ -111,7 +118,7 @@ The colour palette:
 
 [Back to top](<#contents>)
 # Features
-## Existing Features
+## Quiz Structure and Function
 * ### User input section
     * The user is met with the overall graphic elements to frame the screen throughout, and a user input area to enter their username.
     * Once the user has submitted their username, the section is hidden and they provided with the welcome section.
@@ -194,10 +201,14 @@ Passing the code through the validators revealed a few minor errors:
 
 ![W3C Markup Validator End Result](assets/readme-images/html-no-errors.jpg)
 
+[Back to top](<#contents>)
+
 * CSS:
 	* Revealed a parsing error, caused by a missing closing tag on media queries. This was easily resolved.
 
 ![CSS Validator End Result](assets/readme-images/css-no-errors.jpg)
+
+[Back to top](<#contents>)
 
 * JSHint:
 	* This revealed missing semi-colons on lines 64, 138 and 145, which have been corrected.
@@ -207,9 +218,13 @@ Passing the code through the validators revealed a few minor errors:
 
 ![JSHint End Result](assets/readme-images/js-hint-no-errors.jpg)
 
+[Back to top](<#contents>)
+
 ## Responsiveness
 
 The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/). No issues were found throughout devices.
+
+[Back to top](<#contents>)
 
 ## Browser Compatibility
 
@@ -220,6 +235,8 @@ The quiz was tested on all major browsers, to include:
 * Mozilla Firefox. 
 
 No issues were found across browsers.
+
+[Back to top](<#contents>)
 
 ## User Stories
 
@@ -241,6 +258,8 @@ No issues were found across browsers.
 * The user would like to be presented with an aesthetically pleasing, clean and easy to navigate web page.
 	* The design overall is simple and clean, with clear methods of navigation through the quiz in a linear fashion. The graphics are kept simple, with muted, earthy colour usage.
 
+[Back to top](<#contents>)
+
 ## Known Bugs
 
 ### **Resolved**
@@ -252,6 +271,8 @@ No issues were found across browsers.
 	* Tried a for loop on current answers, but it affected the radio results (as it should, in hindsight).
 	* Resolved by adding an additional if statement in my check answers function to check the question count against total questions, which resolved the issue.
 
+[Back to top](<#contents>)
+
 ### **Unresolved**
 
 * #### The user can submit an answer, without selecting a radio button
@@ -262,7 +283,10 @@ No issues were found across browsers.
 
 ![Unresolved bug possible replacement code - lines 104 - 118 of current js](assets/readme-images/troubleshooting_radio_required_bug.jpg)
 
+[Back to top](<#contents>)
+
 ## Additional Testing
+
 ### Lighthouse
 
 #### **Mobile Score**
@@ -271,10 +295,10 @@ No issues were found across browsers.
 #### **Desktop Score**
 ![Lighthouse desktop score](assets/readme-images/lighthouse-desktop-score.jpg)
 
+[Back to top](<#contents>)
 
 ### Peer code review
 The project was posted to [Peer Code Review](https://code-institute-room.slack.com/archives/CGWQJQKC5/p1646775452500159) on Slack where [KlaudiaBC_5P](https://app.slack.com/team/U02J5DB6T4L) pointed out that it was not obvious to her how many questions were included in the quiz. This was rectified by updating the text in the welcome message
-
 
 [Back to top](<#contents>)
 
@@ -287,12 +311,16 @@ The project was posted to [Peer Code Review](https://code-institute-room.slack.c
 
 ![GitHub pages deployed image](assets/readme-images/github-deployed.jpg)
 
+[Back to top](<#contents>)
 
-### **Fork the repository on GitHub**
+### **Fork a repository on GitHub**
 A copy of the GitHub Repository can be made by forking from a user account. This copy can be viewed and changed without affecting the original repository. 
 1. Log in to **GitHub** and locate the repository.
 2. I have chosen to fork Animal Pairs by Eawan Colquhoun as an example. On the right hand side you will note a fork icon and a button named **Fork**. Click on the button to create a copy of the original repository in your own GitHub Account.
+
 ![GitHub forking process image](assets/readme-images/example-repo-fork.jpg)
+
+[Back to top](<#contents>)
 
 ### **Create a local clone**
 
@@ -306,6 +334,7 @@ A copy of the GitHub Repository can be made by forking from a user account. This
 ![Cloning image](assets/readme-images/https-clone.jpg)
 
 [Back to top](<#contents>)
+
 # Credits
 * ## Development
     * [Stack Overflow](https://stackoverflow.com/questions/57698005/allow-only-numbers-and-letters-to-input-string) - pattern input on user form.
@@ -323,6 +352,7 @@ A copy of the GitHub Repository can be made by forking from a user account. This
 	* [The Food and Wine Quiz](https://pauline-rugwevera.github.io/food-and-wine-quiz/) by Pauline Rugwevera
 
 [Back to top](<#contents>)
+
 # Acknowledgements
 This was completed as my submission for Project 2 in the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). I would like to thank my cohort facilitator **Kasia Bogucka**, my mentor **Precious Ijege**, and all at Code Institute for their guidance and support.
 
