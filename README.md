@@ -59,19 +59,35 @@ Click [here](https://nomad1981.github.io/the-folk-music-heroes-quiz/) to test yo
 Initial wireframes were created in InDesign for a basic visual of pages on desktop and smaller devices. Some design choices and quiz struture changed during production, but the overall feel of the quiz remains the same.
 
 ### **Desktop Wireframes**
-![Desktop Wireframe 1](assets/readme-images/desktop_wireframe.jpg) ![Desktop Wireframe 2](assets/readme-images/desktop_wireframe2.jpg)
-![Desktop Wireframe 3](assets/readme-images/desktop_wireframe3.jpg) ![Desktop Wireframe 4](assets/readme-images/desktop_wireframe4.jpg)
-![Desktop Wireframe 5](assets/readme-images/desktop_wireframe5.jpg) ![Desktop Wireframe 6](assets/readme-images/desktop_wireframe6.jpg)
+  <tr>
+    <td><img src="assets/readme-images/desktop_wireframe.jpg" width=400></td>
+    <td><img src="assets/readme-images/desktop_wireframe2.jpg" width=400></td>
+    <td><img src="assets/readme-images/desktop_wireframe3.jpg" width=400></td>
+    <td><img src="assets/readme-images/desktop_wireframe4.jpg" width=400></td>
+    <td><img src="assets/readme-images/desktop_wireframe5.jpg" width=400></td>
+    <td><img src="assets/readme-images/desktop_wireframe6.jpg" width=400></td>
+    <td><img src="assets/readme-images/desktop_wireframe7.jpg" width=400></td>
+  </tr>
+![Desktop Wireframe 1](assets/readme-images/desktop_wireframe.jpg)
+![Desktop Wireframe 2](assets/readme-images/desktop_wireframe2.jpg)
+![Desktop Wireframe 3](assets/readme-images/desktop_wireframe3.jpg)
+![Desktop Wireframe 4](assets/readme-images/desktop_wireframe4.jpg)
+![Desktop Wireframe 5](assets/readme-images/desktop_wireframe5.jpg)
+![Desktop Wireframe 6](assets/readme-images/desktop_wireframe6.jpg)
 ![Desktop Wireframe 7](assets/readme-images/desktop_wireframe7.jpg)
 
 [Back to top](<#contents>)
 
 ### **Smaller Devices Wireframes**
-![Mobile Wireframes 1](assets/readme-images/small_devices_wireframe.jpg) ![Mobile Wireframes 2](assets/readme-images/small_devices_wireframe2.jpg)
-![Mobile Wireframes 3](assets/readme-images/small_devices_wireframe3.jpg) ![Mobile Wireframes 4](assets/readme-images/small_devices_wireframe4.jpg)
-![Mobile Wireframes 5](assets/readme-images/small_devices_wireframe5.jpg) ![Mobile Wireframes 6](assets/readme-images/small_devices_wireframe6.jpg)
-![Mobile Wireframes 7](assets/readme-images/small_devices_wireframe7.jpg)
-
+ <tr>
+    <td><img src="assets/readme-images/small_devices_wireframe.jpg" width=400></td>
+    <td><img src="assets/readme-images/small_devices_wireframe2.jpg" width=400></td>
+    <td><img src="assets/readme-images/small_devices_wireframe3.jpg" width=400></td>
+    <td><img src="assets/readme-images/small_devices_wireframe4.jpg" width=400></td>
+    <td><img src="assets/readme-images/small_devices_wireframe5.jpg" width=400></td>
+    <td><img src="assets/readme-images/small_devices_wireframe6.jpg" width=400></td>
+    <td><img src="assets/readme-images/small_devices_wireframe7.jpg" width=400></td>
+  </tr>
 [Back to top](<#contents>)
 
 ## Site Structure
