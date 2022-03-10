@@ -21,7 +21,7 @@ form.addEventListener('submit', function (event) {
 	// call the welcome paragraph and add text via javascript
 	// Credit: referenced article https://www.codegrepper.com/code-examples/javascript/how+to+add+a+paragraph+in+html+using+javascript
 	let p = document.createElement('p');
-    p.innerHTML = "Welcome to The Folk Music Heroes Quiz " + user.value + "! Here you will get to test your folk music knowledge and I can't promise it will be easy. <br> You will answer 10 questions on some of our favourite folk music heroes. Click start to get the ball rolling..";
+    p.innerHTML = "...to The Folk Music Heroes Quiz " + user.value + "! Here you will get to test your folk music knowledge and I can't promise it will be easy. <br> You will answer 10 questions on some of our favourite folk music heroes. Click start to get the ball rolling..";
 
     document.getElementById('welcome-paragraph').appendChild(p);
     console.log('submit username-form');
