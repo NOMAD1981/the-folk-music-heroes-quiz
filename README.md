@@ -3,7 +3,7 @@ An interactive web page to test the users folk music knowledge. The quiz require
 
 Click [here](https://nomad1981.github.io/the-folk-music-heroes-quiz/) to test your folk music knowledge! 
 
-![Responsive design image](insert image link later)
+![Responsive design image](assets/readme-images/am-i-responsive-sample.jpg)
 
 # Contents
 * [**User Experience UX**](<#user-experience-ux>)
