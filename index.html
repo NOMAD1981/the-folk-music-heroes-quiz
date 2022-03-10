@@ -36,7 +36,7 @@
           <label for="username" id="enter-username">Enter Username: </label>
           <!-- Credit: referenced for pattern input https://stackoverflow.com/questions/57698005/allow-only-numbers-and-letters-to-input-string -->
           <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" required><br>
-          <input type="submit" class="submit-user" id="next-section" value="Submit"/>
+          <input type="submit" aria-label="Submit User" class="submit-user" id="next-section" value="Submit"/>
         </form>
     </div>
   </section>
@@ -48,22 +48,22 @@
         <p id="welcome-paragraph"></p>
       </div>
       <div>
-        <button type="button" onclick="audio.play()" id="start">Start</button>
+        <button type="button" aria-label="Start Button" onclick="audio.play()" id="start">Start</button>
       </div>
   </section>
   
   <!-- quiz questions section -->
   <section id="quiz" class="hide">
     <h2>The Quiz</h2>
-    <form id="quiz-form">
+    <form id="quiz-form" method="post" action=“javascript:void(0);”>
      <div class="questions-area">
         <div class="questions">
           <span id="question"></span><br>
-          <span id="answer-container" class="answer-span"></span>
+          <span id="answer-container"></span>
         </div>
       </div>
       <div>
-        <button type="submit" id="submitBtn">Submit Answer</button> 
+        <button type="submit" aria-label="Submit Answer" id="submitBtn">Submit Answer</button> 
       </div>
     </form>
   </section>
@@ -73,9 +73,9 @@
     <h2>You have completed the quiz!</h2>
     <div class="finish-content">
       <p id="finish-container" class="finish-div"></p>
-      <button type="button" id="tryAgain" onclick="location.href='index.html'">Try Again</button>
+      <button type="button" aria-label="Try Again Button" id="tryAgain" onclick="location.href='index.html'">Try Again</button>
       <!-- Credit: referenced https://stackoverflow.com/questions/19588708/how-to-use-both-onclick-and-target-blank -->
-      <button type="button" id="playMusic" onclick="window.open('https://www.youtube.com/watch?v=6gzuP2hgR3s', '_blank')" value="Listen to some classic folk on YouTube">Play Music</button>
+      <button type="button" aria-label="Play Music Button" id="playMusic" onclick="window.open('https://www.youtube.com/watch?v=6gzuP2hgR3s', '_blank')" value="Listen to some classic folk on YouTube">Play Music</button>
     </div>
   </section>
   

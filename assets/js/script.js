@@ -7,15 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
 // Get the user input element
 let user = document.getElementById('username');
 
-// Get the form and attach an event listener to it
+// Get the form and attach an event listener to it 
 let form = document.getElementById('username-form');
 form.addEventListener('submit', function (event) {
     // hide the form once submitted
     this.style.display = 'none';
 	// show welcome and score tally sections
 	welcomeMessage.classList.remove('hide');
-	// console log username to test
-    console.debug('Username:', user.value);
+	// console log username
+    console.log('Username:', user.value);
     event.preventDefault();
 
 	// call the welcome paragraph and add text via javascript
@@ -108,9 +108,7 @@ function getQuizQuestions() {
 		// Credit: referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
 		// Credit: referenced https://www.techiedelight.com/create-radio-button-dynamically-javascript/
 		// Credit: referenced https://www.sitepoint.com/simple-javascript-quiz/
-		answerHTML = answerHTML + '<label>' + String.fromCharCode(65+i) + '</label>:'
-				+'<input type="radio" name="choice" value="' + String.fromCharCode(97+i) + '" required>'
-			+ answer + '<br>';
+		answerHTML = answerHTML + '<label>' + String.fromCharCode(65+i) +'<input type="radio" name="choice" value="' + String.fromCharCode(97+i) + '" required="required">' + answer + '<br>' + '</label>';
 		i++;
 	});
 
@@ -127,21 +125,10 @@ quizQuestions.splice(randomQuestion, 1);
  */
 function checkAnswer() {
 	let form = document.getElementById('quiz-form');
-	console.debug(form);
 	if (form.elements.choice.value == currentQuestion.correctAnswer){
-	  correctAnswers++;
-	  Swal.fire(
-		'Good job!',
-		'That answer was correct!',
-		'success'
-	  );
+		correctAnswers++;
 	} else {
-	  incorrectAnswers++;
-	  Swal.fire({
-		icon: 'error',
-		title: 'Oops...',
-		text: 'Sorry, that answer was incorrect!',
-	  });
+	  	incorrectAnswers++;
 	}
 	questionCount++;
 	if (quizQuestions.length === 0 || questionCount >= totalQuestions) {
@@ -159,8 +146,6 @@ function displayResult() {
 
 	// place finish note in the html
 	document.getElementById('finish-container').innerHTML = '<div class="finish-div">' + "Well done on completing the quiz " + user.value + "! You can choose to play again, or simply play some music after all your hard work!" + '</div>';
-	// document.getElementById('playMusic').addEventListener('click', function(event) {
-	// })
 }
 
 // update quiz stats
