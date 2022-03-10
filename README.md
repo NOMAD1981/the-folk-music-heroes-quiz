@@ -60,26 +60,26 @@ Initial wireframes were created in InDesign for a basic visual of pages on deskt
 
 ### **Desktop Wireframes**
   <tr>
-    <td><img src="assets/readme-images/desktop_wireframe.jpg" width=400></td>
-    <td><img src="assets/readme-images/desktop_wireframe2.jpg" width=400></td>
-    <td><img src="assets/readme-images/desktop_wireframe3.jpg" width=400></td>
-    <td><img src="assets/readme-images/desktop_wireframe4.jpg" width=400></td>
-    <td><img src="assets/readme-images/desktop_wireframe5.jpg" width=400></td>
-    <td><img src="assets/readme-images/desktop_wireframe6.jpg" width=400></td>
-    <td><img src="assets/readme-images/desktop_wireframe7.jpg" width=400></td>
+    <td><img src="assets/readme-images/desktop_wireframe.jpg" width=350></td>
+    <td><img src="assets/readme-images/desktop_wireframe2.jpg" width=350></td>
+    <td><img src="assets/readme-images/desktop_wireframe3.jpg" width=350></td>
+    <td><img src="assets/readme-images/desktop_wireframe4.jpg" width=350></td>
+    <td><img src="assets/readme-images/desktop_wireframe5.jpg" width=350></td>
+    <td><img src="assets/readme-images/desktop_wireframe6.jpg" width=350></td>
+    <td><img src="assets/readme-images/desktop_wireframe7.jpg" width=350></td>
   </tr>
 
 [Back to top](<#contents>)
 
 ### **Smaller Devices Wireframes**
  <tr>
-    <td><img src="assets/readme-images/small_devices_wireframe.jpg" width=400></td>
-    <td><img src="assets/readme-images/small_devices_wireframe2.jpg" width=400></td>
-    <td><img src="assets/readme-images/small_devices_wireframe3.jpg" width=400></td>
-    <td><img src="assets/readme-images/small_devices_wireframe4.jpg" width=400></td>
-    <td><img src="assets/readme-images/small_devices_wireframe5.jpg" width=400></td>
-    <td><img src="assets/readme-images/small_devices_wireframe6.jpg" width=400></td>
-    <td><img src="assets/readme-images/small_devices_wireframe7.jpg" width=400></td>
+    <td><img src="assets/readme-images/small_devices_wireframe.jpg" width=350></td>
+    <td><img src="assets/readme-images/small_devices_wireframe2.jpg" width=350></td>
+    <td><img src="assets/readme-images/small_devices_wireframe3.jpg" width=350></td>
+    <td><img src="assets/readme-images/small_devices_wireframe4.jpg" width=350></td>
+    <td><img src="assets/readme-images/small_devices_wireframe5.jpg" width=350></td>
+    <td><img src="assets/readme-images/small_devices_wireframe6.jpg" width=350></td>
+    <td><img src="assets/readme-images/small_devices_wireframe7.jpg" width=350></td>
   </tr>
 [Back to top](<#contents>)
 
