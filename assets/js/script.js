@@ -11,7 +11,7 @@ let user = document.getElementById('username');
 let form = document.getElementById('username-form');
 form.addEventListener('submit', function (event) {
     // hide the form once submitted
-    this.style['display'] = 'none';
+    this.style.display = 'none';
 	// show welcome and score tally sections
 	welcomeMessage.classList.remove('hide');
 	// console log username to test
@@ -28,7 +28,6 @@ form.addEventListener('submit', function (event) {
 });
 
 // define welcome section
-let nextSection = document.getElementById('next-section');
 let welcomeMessage = document.getElementById('welcome');
 
 // define quiz section
@@ -61,7 +60,7 @@ document.getElementById('submitBtn').addEventListener('click',function(event){
 	updateStatistics();
 	getQuizQuestions();
 	event.preventDefault();
-  })
+  });
 
 // define quiz variables
 let correctAnswers = 0;
@@ -109,14 +108,14 @@ function getQuizQuestions() {
 		// Credit: referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
 		// Credit: referenced https://www.techiedelight.com/create-radio-button-dynamically-javascript/
 		// Credit: referenced https://www.sitepoint.com/simple-javascript-quiz/
-		answerHTML = answerHTML + '<label>' + String.fromCharCode(65+i) + '<label>:'
-				+'<input type="radio" name="choice" value="' + String.fromCharCode(97+i) + '" required>'
+		answerHTML = answerHTML + '<label>' + String.fromCharCode(65+i) + '</label>:'
+				+'<input type="radio" name="choice" value="' + String.fromCharCode(97+i) + '" required="required">'
 			+ answer + '<br>';
 		i++;
 	});
 
 // place answers in the html
-document.getElementById('answer-container').innerHTML = '<div class="answer-div">' + answerHTML + '</div>';
+document.getElementById('answer-container').innerHTML = '<span class="answer-span">' + answerHTML + '</span>';
 
 // remove question so it won't be asked again
 quizQuestions.splice(randomQuestion, 1);
@@ -129,20 +128,20 @@ quizQuestions.splice(randomQuestion, 1);
 function checkAnswer() {
 	let form = document.getElementById('quiz-form');
 	console.debug(form);
-	if (form.elements['choice'].value == currentQuestion.correctAnswer){
+	if (form.elements.choice.value == currentQuestion.correctAnswer){
 	  correctAnswers++;
 	  Swal.fire(
 		'Good job!',
 		'That answer was correct!',
 		'success'
-	  )
+	  );
 	} else {
 	  incorrectAnswers++;
 	  Swal.fire({
 		icon: 'error',
 		title: 'Oops...',
 		text: 'Sorry, that answer was incorrect!',
-	  })
+	  });
 	}
 	questionCount++;
 	if (quizQuestions.length === 0 || questionCount >= totalQuestions) {
