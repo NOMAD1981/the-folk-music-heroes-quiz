@@ -11,7 +11,7 @@
 
 body {
     background: url("../images/celtic_background.png") no-repeat center center;
-    background-size: 100vh;
+    background-size: cover;
     font-family: 'Londrina Solid', cursive;
     color: #354933;
     text-align: center;
