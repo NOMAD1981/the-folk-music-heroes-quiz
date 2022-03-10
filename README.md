@@ -56,7 +56,7 @@ Click [here](https://nomad1981.github.io/the-folk-music-heroes-quiz/) to test yo
 [Back to top](<#contents>)
 
 ## Wireframes
-Initial wireframes were created in InDesign for a basic visual of pages on desktop and smaller devices. Some design choices and quiz struture changed during production, but the overall feel of the quiz remains the same.
+Initial wireframes were created in InDesign for a basic visual of pages on desktop and smaller devices. Some design choices and quiz structure changed during production, but the overall feel of the quiz remains the same.
 
 ### **Desktop Wireframes**
   <tr>
