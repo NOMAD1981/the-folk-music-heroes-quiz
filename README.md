@@ -1,108 +1,294 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Folk Music Heroes Quiz
+An interactive web page to test the users folk music knowledge. The quiz requires the user to answer 10 folk music related questions, generated randomly from a list of 30.
 
-Welcome NOMAD1981,
+Click [here](https://nomad1981.github.io/the-folk-music-heroes-quiz/) to test your folk music knowledge! 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive design image](insert image link later)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Contents
+* [**User Experience UX**](<#user-experience-ux>)
+    *  [User Stories](<#user-stories>)
+    * [Wireframes](<#wireframes>)
+    * [Site Structure](<#site-structure>)
+    * [Design Choices](<#design-choices>)
+	      *  [Illustrative Graphics](<#illustrative-graphics>)
+        *  [Typography](<#typography>)
+        *  [Colour Scheme](<#colour-scheme>)
+* [**Features**](<#features>)
+    * [**Existing Features**](<#existing-features>)
+        * [Welcome section](<#welcome-section>)
+        * [Quiz and score sections](<#quiz-and-score-sections>)
+        * [Quiz completion](<#quiz-completion>)
+    * [**Removed Features**](<#removed-features>)
+    * [**Future Features**](<#future-features>)
+* [**Technologies Used**](<#technologies-used>)
+* [**Testing**](<#testing>)
+* [**Deployment**](<#deployment>)
+* [**Credits**](<#credits>)
+    * [**Content**](<#content>)
+    * [**Audio**](<#audio>)
+*  [**Acknowledgements**](<#acknowledgements>)
 
-## Gitpod Reminders
+# User Experience (UX)
+## User Stories
+* The user will want to know how long the quiz is, or how many questions they are required to answer.
+* The user will want to know the score, with a log of correct and incorrect answers, along with a tally of how many questions they have answered so far.
+* The user will want to know when the quiz is complete.
+* The user may wish to try again to improve their score.
+* The user may wish to listen to a nice folk music compilation on completion, which they can do if they wish.
+* The user would like to be presented with an aesthetically pleasing and easy to navigate web page.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+[Back to top](<#contents>)
 
-`python3 -m http.server`
+## Wireframes
 
-A blue button should appear to click: _Make Public_,
+![Web Wireframes](insert image link later)
 
-Another blue button should appear to click: _Open Browser_.
+![Mobile Wireframes](insert image link later)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+[Back to top](<#contents>)
 
-A blue button should appear to click: _Make Public_,
+## Site Structure
+The Folk Music Heroes Quiz is a one page site, with sections shown and hidden based on user button clicks to proceed through the quiz.
+The user must firstly enter a username, which will then be populated into the welcome message once submitted. The welcome message includes a brief overview on how to proceed, and the number of questions in the quiz. The start button plays a guitar strum audio and then the quiz section opens. 
+Questions are presented one by one, and the score tally area is visible throughout. Each answer submission is followed by an alert using the alert box styling from [Sweetalert2](https://sweetalert2.github.io/)
+Once the quiz is complete the user can choose to try again, or they have the option to play some music. The '[try again](https://nomad1981.github.io/the-folk-music-heroes-quiz/)' button brings them back to the start, while the '[play music](https://www.youtube.com/watch?v=6gzuP2hgR3s)' button brings them to a folk music classics compilation on YouTube.
 
-Another blue button should appear to click: _Open Browser_.
+### Questions and Answers were heavily researched, with the following links used:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* [funtrivia.com American Folk Music Quiz](https://www.funtrivia.com/trivia-quiz/Music/American-Folk-Music-153371.html)
+* [irishtrivia.com Music Quiz](https://irishtrivia.com/irish-music.htm)
+* [study.com What is Folk Music](https://study.com/academy/lesson/what-is-folk-music-definition-artists-history.html)
+* [encyclopaediaoftrivia.blogspot.com Folk Song](https://encyclopaediaoftrivia.blogspot.com/2015/02/folk-song.html)
+* [wikipedia.org Liam_Clancy](https://en.wikipedia.org/wiki/Liam_Clancy)
+* [worldmusic.net The Folk Music of England: Roots and Revival](https://worldmusic.net/blogs/guide-to-world-music/the-folk-music-of-england-roots-and-revival)
+* [funtrivia.com Woodstock Spirit Quiz](https://www.funtrivia.com/trivia-quiz/Music/Woodstock-Spirit-of-69-307697.html)
+* [play.howstuffworks.com Woodstock Performers Quiz](https://play.howstuffworks.com/quiz/woodstock-performers-quiz)
+* [woodstock.com Lineup](https://www.woodstock.com/lineup/)
+* [wikipedia.org Fairport Convention](https://en.wikipedia.org/wiki/Fairport_Convention)
+* [m.imdb.com nm0593474 Trivia](https://m.imdb.com/name/nm0593474/trivia)
+* [m.imdb.com nm2489930 Trivia](https://m.imdb.com/name/nm2489930/trivia)
 
-To log into the Heroku toolbelt CLI:
+[Back to top](<#contents>)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Design Choices
+* ### Illustrative Graphics
+    * The illustrative graphics were chosen based on the suitability for the project. These 'International Branding' resources were purchased through [DesignCuts](https://www.designcuts.com/product/the-international-brand-collection/) for use in my own client graphic projects. I have chosen the Celtic style branding for use here, for it's earthy tones and its long history of usage in folk/traditional music promotion and branding. The overall design feel is clean and modern, with muted, earthy colour usage.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* ### Typography
+    * The font used throughout is [Londrina Solid](https://fonts.google.com/specimen/Londrina+Solid#about), a cursive style font referred to as 'New Folk'. It is used as different sizes and weights. This font adds to the folky feel of the overall design, and fits the illustrative style graphics with it's imperfect edges.
 
-------
+* ### Colour Scheme
+    * The colour palette is the same used in the illustrative graphics; resources purchased through [DesignCuts](https://www.designcuts.com/product/the-international-brand-collection/) for use in my own client graphic projects (as mentioned above). The colours have an earthy feel to suit the folk related theme of the site. 
 
-## Release History
+The colour palette:
+![Background-Color](assets/readme-images/background-color.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+[Back to top](<#contents>)
+# Features
+## Existing Features
+* ### User input section
+    * The user is met with the overall graphic elements to frame the screen throughout, and a user input area to enter their username.
+    * Once the user has submitted their username, the section is hidden and they provided with the welcome section.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![User input](insert image here)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+[Back to top](<#contents>)
+* ### Welcome section
+    * The welcome section provides the user with a welcome message the populates their username value from the previous screen, to personalise their experience.
+    * The process of completing the quiz is explained; they will answer 10 folk music related questions.
+    * Due to the nature of the quiz, difficulty levels are deliberately not included. As it is a niche subject, the questions asked are all on the higher level of difficulty, unless the user is a folk music expert.
+    * The user is invited to click start to get the quiz running, the section is then hidden and a guitar strum audio sound is provided on click.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Welcome section](insert image here)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+[Back to top](<#contents>)
+* ### Quiz and score sections
+    * The quiz section is presented to the user at the top of the screen, with a score area visible below.
+    * The quiz is navigated questions by question, whereby the user selects a choice through radio button and clicks submit answer, then the next question is populated.
+    * The score area keeps tally as the user progresses through the quiz. It includes the correct answer count (which increments numeric values in green), the incorrect count (which increments numeric values in red), and the total questions answered, until 10 questions are reached.
+    * Questions are populated randomly from an array of 30. Each questions that is asked is also removed once asked so it can't be asked again during the quiz round.
+    * Once the total of 10 questions is met, the user is presented with the final section.
+    
+   ![Quiz and score sections](insert image here)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+[Back to top](<#contents>)
+* ### Quiz completion
+    * On the final screen the user is met with a congratulatory message. They are then presented with a button to [try again](https://nomad1981.github.io/the-folk-music-heroes-quiz/), which brings them back to the start, and also a button to [play music](https://www.youtube.com/watch?reload=9&v=6gzuP2hgR3s), which brings them to a folk music compilation on YouTube.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+[Back to top](<#contents>)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Removed Features
+* Initially, the quiz included an alert after each question was answered. This was included only to display the function.
+	* This feature was styled using [Sweetalert2](https://sweetalert2.github.io/) to improve the visual, as per images below. 
+	* On the advice of my mentor, to improve user experience, this has been removed. 
+		* I had wondered about the inclusion myself, but went ahead with it since it was heavily covered in the course.
+* Initially, [Materialize](https://materializecss.com/) was used to handle css functionality. However, this interfered with dynamically generated form inputs. It was easier, and quicker, to simply write a small portion of css and media queries instead.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+   ![Correct answer using Sweetalert2](insert image here)
+   
+      ![Incorrect answer using Sweetalert2](insert image here)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Future Features
+* Future features might include a visual menu of different music genres to choose from for the quiz, with customised graphics for each.
+* It could also include levels, although this might be easier to achieve with more general genres such as '80's Pop'.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+[Back to top](<#contents>)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Technologies Used
+* [HTML5](https://www.w3schools.com/html/) - provides the content and structure for the website.
+* [CSS](https://www.w3schools.com/css/) - provides the styling.
+* [JavaScript](https://www.w3schools.com/js/) - provides the interactivity.
+* [Adobe InDesign](https://www.adobe.com/ie/products/indesign.html?gclid=CjwKCAiA4KaRBhBdEiwAZi1zzvdLvDOp6sQQ8i306IxTnlD8nTjrQZ-qtTwHuYi42Iuq19V9v2HLcRoCYh8QAvD_BwE&mv=search&mv=search&sdid=LCDWTLJX&ef_id=CjwKCAiA4KaRBhBdEiwAZi1zzvdLvDOp6sQQ8i306IxTnlD8nTjrQZ-qtTwHuYi42Iuq19V9v2HLcRoCYh8QAvD_BwE:G:s&s_kwcid=AL!3085!3!520877429416!e!!g!!indesign!1423511249!56709022755) - used to create the wireframes.
+* [Photoshop](https://www.adobe.com/ie/products/photoshop.html?gclid=CjwKCAiA4KaRBhBdEiwAZi1zzrWtYN1ynk2PYQyRkDA6rmOBQ_nH4fyu0tozwf5yYvFYecrdk87aLBoCfAgQAvD_BwE&mv=search&mv=search&sdid=LZ32SYVR&ef_id=CjwKCAiA4KaRBhBdEiwAZi1zzrWtYN1ynk2PYQyRkDA6rmOBQ_nH4fyu0tozwf5yYvFYecrdk87aLBoCfAgQAvD_BwE:G:s&s_kwcid=AL!3085!3!394398121170!e!!g!!adobe%20photoshop!1423511192!58810496314) - sizing and optimising of imagery.
+* [Illustrator](https://www.adobe.com/ie/products/illustrator.html?gclid=CjwKCAiA4KaRBhBdEiwAZi1zzvyrfAIp9M7beNvU7M_A7WmcLD4s1Pgq9lXlS-OGvbKIQ4focHl4qRoCwooQAvD_BwE&mv=search&mv=search&sdid=KCJMVLF6&ef_id=CjwKCAiA4KaRBhBdEiwAZi1zzvyrfAIp9M7beNvU7M_A7WmcLD4s1Pgq9lXlS-OGvbKIQ4focHl4qRoCwooQAvD_BwE:G:s&s_kwcid=AL!3085!3!520938456686!e!!g!!illustrator!1426208079!56320331432) - vector graphic edits.
+* [Dreamweaver](https://www.adobe.com/ie/products/dreamweaver.html?gclid=CjwKCAiA4KaRBhBdEiwAZi1zzhq68ryRQu1xvAKeSrZmAu0go8XY62h86s1OCYIOWflaxRIXdAfBgRoCHcgQAvD_BwE&mv=search&mv=search&sdid=MH16SGXM&ef_id=CjwKCAiA4KaRBhBdEiwAZi1zzhq68ryRQu1xvAKeSrZmAu0go8XY62h86s1OCYIOWflaxRIXdAfBgRoCHcgQAvD_BwE:G:s&s_kwcid=AL!3085!3!394412007484!e!!g!!dreamweaver!1423511222!56665108220) - fiddling with snippets of code before bringing into VS Code.
+* [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the web page.
+* [Github](https://github.com/) - used to edit and host the web page.
+* [StackEdit](https://stackedit.io) - used for prepping the README.md file
+* [Sweetalert2](https://sweetalert2.github.io/) - Initially used to prettify alert boxes, but the idea was axed based on feedback from my mentor.
+* [Materialise](https://materializecss.com/) - Initially used to try out the grid, but it caused problems with the dynamically generated input radio fields. It was faster, and easier, for me to just quickly write some straight css with some media queries, but I will revisit when I have time to review fully.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+[Back to top](<#contents>)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+# Testing
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Code Validation
+Passing the code through the validators revealed a few minor errors:
 
-------
+* HTML: 
+	* Required section headings, which I had intended to add towards the end anyway.
+	* There was an issue with the nesting of a div inside a p element, which needed to be corrected.
 
-## FAQ about the uptime script
+![W3C Markup Validator End Result](insert image)
 
-**Why have you added this script?**
+* CSS:
+	* Revealed a parsing error, caused by a missing closing tag on media queries. This was easily resolved.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![CSS Validator End Result](insert image)
 
-**How will this affect me?**
+* JSHint:
+	* This revealed missing semi-colons on lines 64, 138 and 145, which have been corrected.
+	* Two unused variables, which were removed.
+	* Two items required a change to dot notation from bracket notation, which was completed.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![CSS Validator End Result](insert image)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Responsiveness Test
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/). No issues were found throughout devices.
 
-**So….?**
+## Browser Compatibility
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+The quiz was tested on all major browsers, to include:
+* Google Chrome
+* Microsoft Edge
+* Safari
+* Mozilla Firefox. 
 
-**Can I opt out?**
+No issues were found across browsers.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## User Stories
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* The user will want to know how long the quiz is, or how many questions they are required to answer.
+    * The user is presented with an overview of how the quiz is to be completed via the welcome section, before commencing the quiz.
 
-**Anything more?**
+* The user will want to know the score, with a log of correct and incorrect answers, along with a tally of how many questions they have answered so far.
+    * The user is presented with a tally of correct, incorrect and total questions answered as they progress through the quiz via the score area.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* The user will want to know when the quiz is complete.
+    * The user is aware that the quiz includes 10 questions from the beginning, and they are presented with a congratulatory section once they have completed the quiz.
 
----
+* The user may wish to try again to improve their score.
+    * The user has the option to try again.
 
-Happy coding!
+* The user may wish to listen to a nice folk music compilation on completion, which they can do if they wish.
+    * The user is presented with the option to 'Play Music' once they have completed the quiz.
+
+* The user would like to be presented with an aesthetically pleasing, clean and easy to navigate web page.
+	* The design overall is simple and clean, with clear methods of navigation through the quiz in a linear fashion. The graphics are kept simple, with muted, earthy colour usage.
+
+## Known Bugs
+* ### Resolved
+* #### The username input was not logging the username to the console, and not entering the user.value in the welcome message.
+    * My mentor pointed out that it was using the wrong method, get when it should have been post, and also required the action javascript:void(0); However, this still did not resolve the issue.
+    * On further inspection, I realised it needed to be added to a form event listener. The user was being called before it was submitted, and so it was not logging to console or displaying in welcome message since it didn't exist yet.
+
+* #### I had issues limiting to 10 questions initially
+	* Tried a for loop on current answers, but it affected the radio results (as it should, in hindsight).
+	* Resolved by adding an additional if statement in my check answers function to check the question count against total questions, which resolved the issue.
+
+* ### Unresolved
+
+* #### The user can submit an answer, without selecting a radio button
+	* It simply lists as an incorrect answer, which is correct at least.
+	* The dynamically generated form does include call required, but it is as if it is not being read.
+	* I have been two days researching the issue online, checked in with 4 people at student support and discussed this with my mentor, with no resolution.
+	* I had written the following code to replace lines 104 through 118 in my js file, but it is so close to deadline, I really don't want to go messing with the quiz any further. It would require a label to be inserted somehow also:
+
+![Unresolved bug possible replacement code - lines 104 - 118 of current js](insert image)
+
+## Additional Testing
+### Lighthouse
+
+![Lighthouse mobile results](insert image here)
+![Lighthouse desktop results](insert image here)
+
+
+### Peer code review
+The project was posted to [Peer Code Review](https://code-institute-room.slack.com/archives/CGWQJQKC5/p1646775452500159) on Slack where [KlaudiaBC_5P](https://app.slack.com/team/U02J5DB6T4L) pointed out that it was not obvious to her how many questions were included in the quiz. This was rectified by updating the text in the welcome message
+
+
+[Back to top](<#contents>)
+
+# Deployment
+### **To deploy the project**
+The site was deployed to GitHub pages. The steps to deploy a site are as follows:
+  1. In the GitHub repository, navigate to the **Settings** tab.
+  2. Once in Settings, navigate to the **Pages** tab on the left hand side.
+  3. Under **Source**, select the branch to **master** or **main**, then click **save**.
+  4. Once the master branch has been selected, the page will be automatically refreshed with a green ribbon display to indicate the successful deployment.
+
+![GitHub pages deployed image](insert image)
+
+  The live link to the Github repository can be found here - 
+
+### **To fork the repository on GitHub**
+A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;
+1. Log in to **GitHub** and locate the [repository](https://github.com/NOMAD1981/the-folk-music-heroes-quiz).
+2. On the right hand side of the page inline with the repository name is a button called **'Fork'**, click on the button to create a copy of the original repository in your GitHub Account.
+![GitHub forking process image](insert image)
+
+### **To create a local clone of this project**
+The method from cloning a project from GitHub is below:
+
+1. Under the repository’s name, click on the **code** tab.
+2. In the **Clone with HTTPS** section, click on the clipboard icon to copy the given URL.
+![Cloning image](insert image)
+3. In your IDE of choice, open **Git Bash**.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type **git clone**, and then paste the URL copied from GitHub.
+6. Press **enter** and the local clone will be created.
+
+[Back to top](<#contents>)
+# Credits
+* ## Content
+    * [Stack Overflow](https://stackoverflow.com/questions/57698005/allow-only-numbers-and-letters-to-input-string) - pattern input on user form.
+    * [Stack Overflow](https://stackoverflow.com/questions/19588708/how-to-use-both-onclick-and-target-blank) - using both onclick and target _blank on the same element.
+    * [Code Grepper](https://www.codegrepper.com/code-examples/javascript/how+to+add+a+paragraph+in+html+using+javascript) - referenced while trying to call the welcome paragraph and add text via javascript.
+    * [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode), [Techie Delight](https://www.techiedelight.com/create-radio-button-dynamically-javascript/) & [Site Point](https://www.sitepoint.com/simple-javascript-quiz/) articles, all referenced while working on generating answer abc radio button choices, and placing the answers into the html.
+
+* ## Audio
+    * Guitar strum sound from [Free Sounds](https://freesound.org/people/FenrirFangs/sounds/234738/).
+
+* ## Other Code Institute projects I saw via Slack and liked/reviewed:
+	* [The Animal Association Game](https://aliokeeffe.github.io/The-Animal-Association-Game/index.html) by Ali O'Keeffe
+	* [Animal Pairs](https://ewancolquhoun.github.io/AnimalPairs/) by Ewan Colquhoun
+	* [Category Quiz](https://ianmeigh.github.io/category-quiz/) by Ian Meigh
+	* [The Food and Wine Quiz](https://pauline-rugwevera.github.io/food-and-wine-quiz/) by Pauline Rugwevera
+
+[Back to top](<#contents>)
+# Acknowledgements
+This was completed as my submission for Project 2 in the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). I would like to thank my cohort facilitator Kasia Bogucka, my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), and all at Code Institute for their guidance and support.
+
+[Back to top](<#contents>)
