@@ -175,6 +175,7 @@ The colour palette:
 * Future features might include a visual menu of different music genres to choose from for the quiz, with customised graphics for each.
 * It could also include levels, although this might be easier to achieve with more general genres such as '80's Pop'.
 * An item of information in the form of trivia could be displayed to the user after each correct answer.
+* A leaderboard section with associated users and scores.
 
 [Back to top](<#contents>)
 
