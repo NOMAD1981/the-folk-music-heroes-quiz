@@ -11,7 +11,7 @@
 
 body {
     background: url("../images/celtic_background.png") no-repeat center center;
-    background-size: 100wh;
+    background-size: 100vh;
     font-family: 'Londrina Solid', cursive;
     color: #354933;
     text-align: center;
@@ -31,7 +31,7 @@ h2 {
 }
 
 h2.user {
-    display: none;;
+    display: none;
 }
 
 h2.your-score {
@@ -184,8 +184,10 @@ button, .submit-user {
     .scores {
         font-size: 1.7rem;
     }
+}
 
     @media screen and (max-width: 380px) {
+
     h1 {
         font-size: 1.5rem;
     }
@@ -235,3 +237,4 @@ button, .submit-user {
     .scores {
         font-size: 1.5rem;
     }
+}
